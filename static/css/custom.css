@@ -252,8 +252,6 @@ html, body {
 
 
 
-
-
 /* Experience & Education two-column layout */
 .experience-grid {
   display: flex;
@@ -273,9 +271,11 @@ html, body {
 
 
 
+
 /* Sidebar social icons */
 .social-icons {
   margin-top: 0.5rem;
+  margin-bottom: 1.8rem; /* increased space below icons */
   display: flex;
   gap: 0.8rem;
 }
