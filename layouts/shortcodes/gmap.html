@@ -1,0 +1,8 @@
+{{- $q := .Get "q" | urlquery -}}
+{{- $h := .Get "height" | default "420" -}}
+<iframe
+  src="https://www.google.com/maps?q={{ $q }}&output=embed"
+  width="100%" height="{{ $h }}" style="border:0;"
+  loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+  aria-label="Map: {{ .Get "q" }}">
+</iframe>
