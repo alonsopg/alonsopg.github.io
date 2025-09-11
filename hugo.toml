@@ -10,31 +10,32 @@ theme = "hyde"
   mainSections = ["posts"]
   customCSS = ["css/custom.css"]
 
-
 [menu]
   [[menu.main]]
     name = "Experience"
-    url = "/experience/"
+    url  = "/experience/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Demos"
+    url  = "/demos/"
     weight = 2
 
   [[menu.main]]
     name = "Publications"
-    url = "/publications/"
+    url  = "/publications/"
     weight = 3
-
-  # [[menu.main]]
-  #   name = "Education"
-  #   url = "/education/"
-  #   weight = 4
 
   [[menu.main]]
     name = "Contact"
-    url = "/contact/"
-    weight = 5
+    url  = "/contact/"
+    weight = 4
 
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+
 
