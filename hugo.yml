@@ -25,12 +25,15 @@ jobs:
       - name: Build
         run: hugo --minify -D --baseURL "https://alonsopg.github.io/"
       - uses: actions/upload-pages-artifact@v3
-        with: { path: ./public }
+        with:
+          path: ./public
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    environment: { name: github-pages, url: ${{ steps.deployment.outputs.page_url }} }
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
