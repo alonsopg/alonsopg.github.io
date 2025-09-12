@@ -8,6 +8,28 @@ _build:
 
 ## 2025
 
+
+<!-- EdTec-ItemGen -->
+<div style="padding:12px 14px;margin:14px 0;border:1px solid #e6e6e6;border-left:6px solid #bbb;border-radius:8px;background:#f7fafc">
+  <p style="margin:0 0 .35rem 0">
+    Alonso Palomino and Benjamin Paassen. 2025.
+    <strong>Benchmarking Item Difficulty Classification in German Vocational Education and Training.</strong>
+    <em>Proceedings of the 15th International Conference on Recent Advances in Natural Language Processing (RANLP)</em>.
+  </p>
+
+  <div style="margin-top:.35rem">
+    <a href="https://aclanthology.org/" target="_blank" rel="noopener">🔗 ACL Anthology</a>
+    <span style="margin:0 .35rem">·</span>
+    <details style="display:inline">
+      <summary style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#e0e6ed;cursor:pointer;user-select:none">📑 Citation</summary>
+      <pre style="margin:.6rem 0 0 0;white-space:pre-wrap;font-family:ui-monospace,Menlo,Consolas,'Liberation Mono',monospace;font-size:.9rem;background:#fff;border:1px solid #d9dde3;border-radius:6px;padding:.6rem">
+        TBA
+      </pre>
+    </details>
+  </div>
+</div>
+
+
 <!-- EdTec-ItemGen -->
 <div style="padding:12px 14px;margin:14px 0;border:1px solid #e6e6e6;border-left:6px solid #bbb;border-radius:8px;background:#f7fafc">
   <p style="margin:0 0 .35rem 0">
