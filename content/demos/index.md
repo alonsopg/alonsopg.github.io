@@ -1,9 +1,7 @@
 ---
 title: "Demos 👾"
 menu: "main"
-_build:
-  list: never
-  render: always
+_build: { list: never, render: always }
 ---
 ---
 <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;">

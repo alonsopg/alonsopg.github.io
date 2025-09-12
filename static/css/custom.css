@@ -300,5 +300,6 @@ html, body {
 @media (max-width: 768px) {
   .social-icons {
     justify-content: center;
+    gap: 0.5rem; /* tighter spacing for mobile */
   }
 }

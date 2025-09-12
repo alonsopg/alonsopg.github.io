@@ -7,7 +7,7 @@ _build: { list: never, render: always }
 <div class="contact-grid">
 
   <div class="contact-form-wrap">
-    <h3>Send me a message</h3>
+    <h3>Send me a message 📬</h3>
     <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
       <input type="text" name="_gotcha" style="display:none">
       <label for="name">Your name</label>
