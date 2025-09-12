@@ -23,7 +23,14 @@ _build:
     <details style="display:inline">
       <summary style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#e0e6ed;cursor:pointer;user-select:none">📑 Citation</summary>
       <pre style="margin:.6rem 0 0 0;white-space:pre-wrap;font-family:ui-monospace,Menlo,Consolas,'Liberation Mono',monospace;font-size:.9rem;background:#fff;border:1px solid #d9dde3;border-radius:6px;padding:.6rem">
-        TBA
+        @inproceedings{palomino-paassen-2025-benchmarking,
+          title = "Benchmarking Item Difficulty Classification in {G}erman Vocational Education and Training",
+          author = "Palomino, Alonso  and  Paassen, Benjamin",
+          booktitle = "Proceedings of the International Conference on Recent Advances in Natural Language Processing (RANLP 2025)",
+          year = "2025",
+          address = "Varna, Bulgaria",
+          publisher = "INCOMA Ltd.",
+      }
       </pre>
     </details>
   </div>
