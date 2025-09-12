@@ -8,6 +8,33 @@ _build:
 
 ## 2025
 
+<div style="padding:12px 14px;margin:14px 0;border:1px solid #e6e6e6;border-left:6px solid #bbb;border-radius:8px;background:#f7fafc">
+  <p style="margin:0 0 .35rem 0">
+    Alonso Palomino. 2025.
+    <strong>DFKI@RAGTIME: Optimization-Driven Key Point Extraction for Retrieval-Augmented English Report Generation.</strong>
+    <em>Text REtrieval Conference (TREC) 2025, RAGTIME Track, English Report Generation Subtask</em>.
+  </p>
+
+  <div style="margin-top:.35rem">
+    <a href="https://trec-ragtime.github.io/" target="_blank" rel="noopener">🔗 TREC RAGTIME</a>
+    <span style="margin:0 .35rem">·</span>
+    <details style="display:inline">
+      <summary style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#e0e6ed;cursor:pointer;user-select:none">📑 Citation</summary>
+      <pre style="margin:.6rem 0 0 0;white-space:pre-wrap;font-family:ui-monospace,Menlo,Consolas,'Liberation Mono',monospace;font-size:.9rem;background:#fff;border:1px solid #d9dde3;border-radius:6px;padding:.6rem">
+@inproceedings{palomino-2025-dfki-ragtime,
+  title     = {DFKI@RAGTIME: Optimization-Driven Key Point Extraction for Retrieval-Augmented English Report Generation},
+  author    = {Palomino, Alonso},
+  booktitle = {Proceedings of the Text REtrieval Conference (TREC) 2025, RAGTIME Track},
+  year      = {2025},
+  url       = {https://trec-ragtime.github.io/},
+  note      = {English Report Generation subtask, notebook paper}
+}
+      </pre>
+    </details>
+  </div>
+</div>
+
+
 
 <!-- EdTec-ItemGen -->
 <div style="padding:12px 14px;margin:14px 0;border:1px solid #e6e6e6;border-left:6px solid #bbb;border-radius:8px;background:#f7fafc">
