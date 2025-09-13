@@ -8,7 +8,7 @@ _build:
 
 ## 2025
 
-<div style="padding:12px 14px;margin:14px 0;border:1px solid #e6e6e6;border-left:6px solid #bbb;border-radius:8px;background:#f7fafc">
+<!-- <div style="padding:12px 14px;margin:14px 0;border:1px solid #e6e6e6;border-left:6px solid #bbb;border-radius:8px;background:#f7fafc">
   <p style="margin:0 0 .35rem 0">
     Alonso Palomino. 2025.
     <strong>DFKI@RAGTIME: Optimization-Driven Key Point Extraction for Retrieval-Augmented English Report Generation.</strong>
@@ -32,7 +32,7 @@ _build:
     </details>
   </div>
 </div>
-
+ -->
 <div style="padding:12px 14px;margin:14px 0;border:1px solid #e6e6e6;border-left:6px solid #bbb;border-radius:8px;background:#f7fafc">
   <p style="margin:0 0 .35rem 0">
     Alonso Palomino and Benjamin Paassen. 2025.

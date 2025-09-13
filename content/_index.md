@@ -39,10 +39,6 @@ Currently, I am working on smart tutoring systems with the <a href="https://de.d
 </div>
 
 
-
-
-
-
 ## Interests
 * Natural Language Processing: **Real-World Applications**
 * Large Language Models: Foundations, Formal Frameworks, Applications, and Limitations
