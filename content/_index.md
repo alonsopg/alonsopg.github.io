@@ -25,12 +25,10 @@ I have extensive industry experience applying NLP to real-world problems, having
 <a href="https://www.sngular.com/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">Sngular</a>, and 
 <a href="https://scads.ai/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">ScaDS.AI</a>. 
 I hold a PhD in Computer Science from 
-<a href="https://www.uni-bielefeld.de/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">Bielefeld University</a> and the 
-<a href="https://www.dfki.de/web" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">German Research Center for Artificial Intelligence (DFKI)</a>, where I focused on generative NLP models and information retrieval to enhance question banks in vocational education and training. I also earned an MSc in Artificial Intelligence from the 
-<a href="https://www.ed.ac.uk/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">University of Edinburgh</a> in the UK and a BSc in Computer Science from 
+<a href="https://www.uni-bielefeld.de/fakultaeten/technische-fakultaet/arbeitsgruppen/kml/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">Bielefeld University's KML Group</a> and the 
+<a href="https://www.dfki.de/en/web/research/research-departments/educational-technology-lab" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">DFKI Educational Technology Lab</a>, where I focused on generative NLP models and information retrieval for enhancing question banks in vocational education and training. I also earned an MSc in Artificial Intelligence from the <a href="https://www.ed.ac.uk/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">University of Edinburgh</a> in the UK and a BSc in Computer Science from 
 <a href="https://www.unam.mx/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">UNAM</a> in Mexico.
 </div>
-
 
 
 <!-- PhD + Research + Current Project -->
