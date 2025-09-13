@@ -48,5 +48,3 @@ Currently, I am working on smart tutoring systems with the <a href="https://de.d
 * Large Language Models: Foundations, Formal Frameworks, Applications, and Limitations
 * Generative Information Retrieval and Recommender Systems
 * Dialogue and Conversational Systems
-* Mining Software Repositories, and Models to Reason About Source Code
-
