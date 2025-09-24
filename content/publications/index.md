@@ -40,7 +40,7 @@ _build:
     <em>Proceedings of the 15th International Conference on Recent Advances in Natural Language Processing (RANLP)</em>.
   </p>
   <div style="margin-top:.35rem">
-    <a href="https://aclanthology.org/" target="_blank" rel="noopener">🔗 ACL Anthology</a>
+    <a href="https://aclanthology.org/2025.ranlp-1.99" target="_blank" rel="noopener">🔗 ACL Anthology</a>
     <span style="margin:0 .35rem">·</span>
     <span style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#d0f0d0;user-select:none">📚 RANLP</span>
     <span style="margin:0 .35rem">·</span>
@@ -57,7 +57,7 @@ _build:
   pages     = {870--875},
   abstract  = {Predicting the difficulty of exam questions or items is essential to effectively assembling and calibrating exams. While item response theory (IRT) models can estimate item difficulty, they require student responses that are costly and rarely available at scale. Natural language processing methods offer a text-only alternative; however, due to the scarcity of real-world labeled data, prior work often relies on synthetic or domain-specific corpora, limiting generalizability and overlooking the nuanced challenges of real-world text-based item difficulty estimation. Addressing this gap, we benchmark 122 classifiers on 935 German Vocational Education and Training (VET) items labeled via previous IRT analysis to assess feasibility under real-world conditions. In our setup, a stacked ensemble that combines linguistic features, pre-trained embeddings, and external semantic resources outperforms both transformer-based models and few-shot large language models, achieving moderate performance. We report findings and discuss limitations in the context of German VET.},
   url       = {https://aclanthology.org/2025.ranlp-1.99}
-}      </pre>
+}</pre>
     </details>
   </div>
 </div>
