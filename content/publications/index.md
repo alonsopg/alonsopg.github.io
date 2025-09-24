@@ -40,7 +40,7 @@ _build:
     <em>Proceedings of the 15th International Conference on Recent Advances in Natural Language Processing (RANLP)</em>.
   </p>
   <div style="margin-top:.35rem">
-    <a href="https://acl-bg.org/proceedings/2025/RANLP\/%202025/pdf/2025.ranlp-1.99.pdf" target="_blank" rel="noopener">🔗 ACL Anthology</a>
+    <a href="https://acl-bg.org/proceedings/2025/RANLP%202025/pdf/2025.ranlp-1.99.pdf" target="_blank" rel="noopener">🔗 ACL Anthology</a>
     <span style="margin:0 .35rem">·</span>
     <span style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#d0f0d0;user-select:none">📚 RANLP</span>
     <span style="margin:0 .35rem">·</span>
