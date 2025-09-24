@@ -46,8 +46,7 @@ _build:
     <span style="margin:0 .35rem">·</span>
     <details style="display:inline">
       <summary style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#e0e6ed;cursor:pointer;user-select:none">📑 Citation</summary>
-      <pre>
-        @InProceedings{palomino-paassen:2025:RANLP,
+      <pre>@InProceedings{palomino-paassen:2025:RANLP,
   author    = {Palomino, Alonso  and  Paassen, Benjamin},
   title     = {Benchmarking Item Difficulty Classification in German Vocational Education and Training},
   booktitle      = {Proceedings of the 15th International Conference on Recent Advances in Natural Language Processing - Natural Language Processing in the Generative AI era},
