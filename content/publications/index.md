@@ -46,14 +46,19 @@ _build:
     <span style="margin:0 .35rem">·</span>
     <details style="display:inline">
       <summary style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#e0e6ed;cursor:pointer;user-select:none">📑 Citation</summary>
-      <pre>@inproceedings{palomino-paassen-2025-benchmarking,
+      <pre>
+        @InProceedings{palomino-paassen:2025:RANLP,
+  author    = {Palomino, Alonso  and  Paassen, Benjamin},
   title     = {Benchmarking Item Difficulty Classification in German Vocational Education and Training},
-  author    = {Palomino, Alonso and Paassen, Benjamin},
-  booktitle = {Proceedings of the International Conference on Recent Advances in Natural Language Processing (RANLP 2025)},
-  year      = {2025},
-  address   = {Varna, Bulgaria},
-  publisher = {INCOMA Ltd.}
-}</pre>
+  booktitle      = {Proceedings of the 15th International Conference on Recent Advances in Natural Language Processing - Natural Language Processing in the Generative AI era},
+  month          = {September},
+  year           = {2025},
+  address        = {Varna, Bulgaria},
+  publisher      = {INCOMA Ltd., Shoumen, Bulgaria},
+  pages     = {870--875},
+  abstract  = {Predicting the difficulty of exam questions or items is essential to effectively assembling and calibrating exams. While item response theory (IRT) models can estimate item difficulty, they require student responses that are costly and rarely available at scale. Natural language processing methods offer a text-only alternative; however, due to the scarcity of real-world labeled data, prior work often relies on synthetic or domain-specific corpora, limiting generalizability and overlooking the nuanced challenges of real-world text-based item difficulty estimation. Addressing this gap, we benchmark 122 classifiers on 935 German Vocational Education and Training (VET) items labeled via previous IRT analysis to assess feasibility under real-world conditions. In our setup, a stacked ensemble that combines linguistic features, pre-trained embeddings, and external semantic resources outperforms both transformer-based models and few-shot large language models, achieving moderate performance. We report findings and discuss limitations in the context of German VET.},
+  url       = {https://aclanthology.org/2025.ranlp-1.99}
+}      </pre>
     </details>
   </div>
 </div>
