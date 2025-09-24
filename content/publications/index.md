@@ -71,7 +71,7 @@ _build:
   <div style="margin-top:.35rem">
     <a href="https://aclanthology.org/2025.knowllm-1.2/" target="_blank" rel="noopener">🔗 ACL Anthology</a>
     <span style="margin:0 .35rem">·</span>
-    <span style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#d0f0d0;user-select:none">📚 KnowFM</span>
+    <span style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#d0f0d0;user-select:none">📚 ACL-KnowFM</span>
     <span style="margin:0 .35rem">·</span>
     <details style="display:inline">
       <summary style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#e0e6ed;cursor:pointer;user-select:none">📑 Citation</summary>
