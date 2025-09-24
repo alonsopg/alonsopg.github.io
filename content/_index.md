@@ -9,9 +9,9 @@ _build: { list: never, render: always }
 ---
 
 <div style="background-color:#f0f8ff; padding:10px;">
-Hi, I'm Alonso Palomino, an NLP researcher at the 
+Hi, I'm Alonso, an NLP researcher at the 
 <a href="https://www.dfki.de/web" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">
-German Research Center for Artificial Intelligence (DFKI)</a>. I work on developing NLP applications for education in collaboration with industry and government partners.
+German Research Center for Artificial Intelligence (DFKI)</a>. I build educational applications using NLP, working together with industry and government partners.
 </div>
 
 ## About 
@@ -25,7 +25,7 @@ I have extensive industry experience applying NLP to real-world problems, having
 <a href="https://amadeus.com/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">Amadeus IT Group</a>, and 
 <a href="https://www.sngular.com/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">Sngular</a>. 
 I hold a PhD in Computer Science from 
-<a href="https://www.uni-bielefeld.de/fakultaeten/technische-fakultaet/arbeitsgruppen/kml/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">Bielefeld University's KML Group</a> and <a href="https://www.dfki.de/en/web/research/research-departments/educational-technology-lab" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">DFKI's Educational Technology Lab</a>, where I focused on generative NLP models and information retrieval for enhancing question banks in vocational education and training. I also earned an MSc in Artificial Intelligence from the <a href="https://www.ed.ac.uk/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">University of Edinburgh</a> in the UK and a BSc in Computer Science from 
+<a href="https://www.uni-bielefeld.de/fakultaeten/technische-fakultaet/arbeitsgruppen/kml/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">Bielefeld University's KML Group</a> and <a href="https://www.dfki.de/en/web/research/research-departments/educational-technology-lab" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">DFKI's Educational Technology Lab</a>, I also earned an MSc in Artificial Intelligence from the <a href="https://www.ed.ac.uk/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">University of Edinburgh</a> in the UK and a BSc in Computer Science from 
 <a href="https://www.unam.mx/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">UNAM</a> in Mexico.
 </div>
 
