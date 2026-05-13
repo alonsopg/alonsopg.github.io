@@ -6,32 +6,61 @@ _build:
   render: always
 ---
 
-## 2025
+## 2026
 
-<!-- <div style="padding:12px 14px;margin:14px 0;border:1px solid #e6e6e6;border-left:6px solid #bbb;border-radius:8px;background:#f7fafc">
+<div style="padding:12px 14px;margin:14px 0;border:1px solid #e6e6e6;border-left:6px solid #bbb;border-radius:8px;background:#f7fafc">
   <p style="margin:0 0 .35rem 0">
-    Alonso Palomino. 2025.
-    <strong>Optimizing Factoid Selection for Retrieval-Augmented English Report Generation.</strong>
-    <em>Text REtrieval Conference (TREC) 2025, RAGTIME Track, English Report Generation Subtask</em>.
+    Alonso Palomino. 2026.
+    <strong>Hybrid Dense-Sparse Retrieval and Re-Ranking for Multilingual Resume Retrieval from Job Descriptions.</strong>
+    <em>CLEF 2026 Working Notes, TalentCLEF 2026 Task A</em>.
   </p>
   <div style="margin-top:.35rem">
-    <a href="https://trec-ragtime.github.io/" target="_blank" rel="noopener">🔗 TREC RAGTIME</a>
+    <span style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#f0f0f0;user-select:none">🔗 TBA</span>
     <span style="margin:0 .35rem">·</span>
-    <span style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#d0f0d0;user-select:none">📚 TREC</span>
+    <span style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#d0f0d0;user-select:none">📚 CLEF / TalentCLEF</span>
     <span style="margin:0 .35rem">·</span>
     <details style="display:inline">
       <summary style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#e0e6ed;cursor:pointer;user-select:none">📑 Citation</summary>
-      <pre>@inproceedings{palomino-2025-dfki-ragtime,
-  title     = {DFKI@RAGTIME: Optimization-Driven Key Point Extraction for Retrieval-Augmented English Report Generation},
+      <pre>@inproceedings{palomino-2026-hybrid,
+  title     = {Hybrid Dense-Sparse Retrieval and Re-Ranking for Multilingual Resume Retrieval from Job Descriptions},
   author    = {Palomino, Alonso},
-  booktitle = {Proceedings of the Text REtrieval Conference (TREC) 2025, RAGTIME Track},
-  year      = {2025},
-  url       = {https://trec-ragtime.github.io/},
-  note      = {English Report Generation subtask, notebook paper}
+  booktitle = {CLEF 2026 Working Notes},
+  note      = {Working Notes for TalentCLEF 2026 Task A},
+  year      = {2026},
+  address   = {Jena, Germany},
+  url       = {TBA}
 }</pre>
     </details>
   </div>
-</div> -->
+</div>
+
+<div style="padding:12px 14px;margin:14px 0;border:1px solid #e6e6e6;border-left:6px solid #bbb;border-radius:8px;background:#f7fafc">
+  <p style="margin:0 0 .35rem 0">
+    Alonso Palomino. 2026.
+    <strong>Selected-Layer Codec Compression for Compact Speech Translation Models: An IWSLT 2026 English-to-Chinese Submission.</strong>
+    <em>Proceedings of the 23rd International Conference on Spoken Language Translation (IWSLT 2026)</em>.
+  </p>
+  <div style="margin-top:.35rem">
+    <span style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#f0f0f0;user-select:none">🔗 TBA</span>
+    <span style="margin:0 .35rem">·</span>
+    <span style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#d0f0d0;user-select:none">📚 IWSLT</span>
+    <span style="margin:0 .35rem">·</span>
+    <details style="display:inline">
+      <summary style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#e0e6ed;cursor:pointer;user-select:none">📑 Citation</summary>
+      <pre>@inproceedings{palomino-2026-selected,
+  title     = {Selected-Layer Codec Compression for Compact Speech Translation Models: An IWSLT 2026 English-to-Chinese Submission},
+  author    = {Palomino, Alonso},
+  booktitle = {Proceedings of the 23rd International Conference on Spoken Language Translation (IWSLT 2026)},
+  year      = {2026},
+  address   = {San Diego, California, US},
+  publisher = {Association for Computational Linguistics},
+  url       = {TBA}
+}</pre>
+    </details>
+  </div>
+</div>
+
+## 2025
 
 <div style="padding:12px 14px;margin:14px 0;border:1px solid #e6e6e6;border-left:6px solid #bbb;border-radius:8px;background:#f7fafc">
   <p style="margin:0 0 .35rem 0">
