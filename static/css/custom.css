@@ -304,6 +304,10 @@ html, body {
   line-height: 22px;
 }
 
+.social-icons .scholar-icon {
+  font-size: 24px;
+}
+
 .social-icons .acl-icon {
   width: 20px;
   height: 20px;
