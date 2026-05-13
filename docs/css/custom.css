@@ -297,8 +297,8 @@ html, body {
 }
 
 .social-icons .acl-icon {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
 }
 
 .social-icons .hf-emoji {
@@ -307,6 +307,7 @@ html, body {
   height: 22px;
   font-size: 20px;
   line-height: 22px;
+  filter: grayscale(1) contrast(1.15);
 }
 
 /* Responsive: center icons on smaller screens */
