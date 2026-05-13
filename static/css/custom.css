@@ -301,6 +301,14 @@ html, body {
   height: 22px;
 }
 
+.social-icons .hf-emoji {
+  display: block;
+  width: 22px;
+  height: 22px;
+  font-size: 20px;
+  line-height: 22px;
+}
+
 /* Responsive: center icons on smaller screens */
 @media (max-width: 768px) {
   .social-icons {
