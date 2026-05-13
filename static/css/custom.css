@@ -296,6 +296,11 @@ html, body {
   height: 22px;
 }
 
+.social-icons .acl-icon {
+  width: 22px;
+  height: 22px;
+}
+
 /* Responsive: center icons on smaller screens */
 @media (max-width: 768px) {
   .social-icons {
