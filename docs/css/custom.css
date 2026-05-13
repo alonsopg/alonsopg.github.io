@@ -296,6 +296,14 @@ html, body {
   height: 22px;
 }
 
+.social-icons .ai {
+  display: block;
+  width: 22px;
+  height: 22px;
+  font-size: 22px;
+  line-height: 22px;
+}
+
 .social-icons .acl-icon {
   width: 20px;
   height: 20px;
