@@ -28,9 +28,14 @@ publishDir = "docs"            # <- GitHub Pages will serve from /docs
     weight = 3
 
   [[menu.main]]
+    name = "Service"
+    url  = "/service/"
+    weight = 4
+
+  [[menu.main]]
     name = "Contact"
     url  = "/contact/"
-    weight = 4
+    weight = 5
 
 [markup]
   [markup.goldmark]
