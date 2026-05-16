@@ -6,9 +6,9 @@ _build:
   render: always
 ---
 
-## Reviewing and Program Committee Service
+## Service
 
-1. **ACL 2026 Industry Track**, Reviewer
+1. **[ACL 2026 Industry Track](https://2026.aclweb.org/calls/industry_track/)**, Reviewer
 
 2. **[BEA 2026](https://sig-edu.org/members)**, Reviewer
 
