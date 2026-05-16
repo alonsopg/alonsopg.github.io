@@ -10,7 +10,7 @@ _build:
 
 1. **[ACL 2026 Industry Track](https://2026.aclweb.org/calls/industry_track/)**, Reviewer
 
-2. **[BEA 2026](https://sig-edu.org/members)**, Reviewer
+2. **[ACL BEA 2026](https://sig-edu.org/members)**, Reviewer
 
 3. **[ACL 2025 Industry Track](https://aclanthology.org/2025.acl-industry.0.pdf)**, Reviewer
 
