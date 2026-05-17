@@ -19,7 +19,7 @@ _build: { list: never, render: always }
       Designed to illustrate how retrieval, relevance modeling, and controlled composition can be combined in document-centric workflows.
     </p>
     <p style="margin:0;">
-      <a href="/demos/edtec-qbuilder/">View static demo 🔗</a>
+      <a href="/demos/edtec-qbuilder/">View demo 🔗</a>
     </p>
   </article>
 
@@ -31,11 +31,8 @@ _build: { list: never, render: always }
     <p style="margin:0 0 10px 0;">
       The system combines document chunking, semantic retrieval, and key point extraction with LLM-based generation. Retrieved evidence is injected into prompts to ensure generated text remains grounded in source documents.
     </p>
-    <p style="margin:0 0 12px 0;">
-      The demo highlights prompt orchestration, traceability of generated content, and basic controls for evaluating and inspecting model outputs in document-heavy settings.
-    </p>
     <p style="margin:0;">
-      <a href="https://edtec-itemgen.xyz/" target="_blank" rel="noopener">View demo 🔗</a>
+      <a href="/demos/edtec-itemgen/">View demo 🔗</a>
     </p>
   </article>
 

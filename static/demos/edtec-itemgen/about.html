@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EdTec-ItemGen</title>
+
+   
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+    crossorigin="anonymous"
+  >
+
+   
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+  >
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  />
+
+  <style type="text/css">
+    .navbar-brand {
+      font-size: 1.5rem;
+    }
+    #card-serach-container.static {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 99;
+      padding-top: 0 !important;
+    }
+    #results-container.static {
+      padding-top: 275px !important;
+    }
+    #nav-pagination {
+      margin: auto;
+      width: fit-content;
+    }
+    #results .card-footer {
+      background-color: transparent;
+    }
+    #error {
+      color: red;
+    }
+    .answer-list {
+      list-style-type: lower-alpha;
+    }
+    .border-left {
+      border-left: 1px solid #00000040;
+    }
+    .form-check.form-check-inline {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    .form-check.form-check-inline label {
+      cursor: pointer;
+    }
+    #text {
+      transition: max-height 1s;
+      overflow: hidden;
+      max-height: 2000px;
+    }
+    .card-data {
+      cursor: pointer;
+    }
+    .border-success {
+      box-shadow: 3px 2px 9px 2px #898383;
+      background-color: #00800024;
+    }
+    .page-item {
+      cursor: pointer;
+    }
+    #fiters {
+      display: none;
+    }
+    .graph-container {
+      display: none !important;
+    }
+    .error .stars-container {
+      border: 1px solid red;
+      display: inline-block;
+    }
+    .form-control.error {
+      border: 1px solid red;
+    }
+    .stars-container {
+      margin-left: 25px;
+      display: inline-block;
+    }
+    .myTooltip {
+      cursor: pointer;
+    }
+    .border-error {
+      box-shadow: 3px 2px 9px 2px #ff000099;
+      background-color: #ff000029;
+    }
+    #submit {
+      display: none;
+    }
+    .queryTest {
+      cursor: pointer;
+    }
+    .no-decoration {
+      text-decoration: none;
+    }
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+    .tg  {
+      border-collapse: collapse;
+      border-color: #ccc;
+      border-spacing: 0;
+    }
+    .tg td {
+      background-color: #fff;
+      border-color: #ccc;
+      border-style: solid;
+      border-width: 0px;
+      color: #333;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      overflow: hidden;
+      padding: 10px 5px;
+      word-break: normal;
+    }
+    .tg th {
+      background-color: #f0f0f0;
+      border-color: #ccc;
+      border-style: solid;
+      border-width: 0px;
+      color: #333;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      overflow: hidden;
+      padding: 10px 5px;
+      word-break: normal;
+    }
+    #tableToggle {
+      display: none;
+    }
+    #tableToggle:checked + #tableContainer {
+      display: block;
+    }
+    #tableContainer {
+      display: none;
+      text-align: center;
+      margin: auto;
+    }
+    .media-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .media-image, .media-video {
+      padding: 10px;
+    }
+    .flow-img {
+      width: 75%;
+      height: auto;
+    }
+    .media-video iframe {
+      width: 560px;
+      height: 315px;
+      border: 0;
+    }
+    iframe {
+      width: 560px;
+      height: 315px;
+      max-width: 80%;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a
+        class="navbar-brand"
+        href=""
+      >
+        EdTec-Lab
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-between"
+        id="navbarSupportedContent"
+      >
+        <div>
+          <a class="navbar-brand" href="index.html">
+            <i class="bi bi-search"></i>
+            <span>Tool</span>
+          </a>
+          <a class="navbar-brand" href="#">
+            <i class="bi bi-list-ul"></i>
+            <span>About</span>
+          </a>
+          <a class="navbar-brand" href="https://anonymous.4open.science/r/edtec-itemgen-E54C">
+            <i class="bi bi-github"></i>
+            <span>Code</span>
+          </a>
+        </div>
+
+          
+        <!--<div style="font-size: 0;">-->
+        <!--  <a href="https://www.dfki.de/en/web">-->
+        <!--    <img-->
+        <!--      src="images/logo2.png"-->
+        <!--      alt="DFKI Logo"-->
+        <!--      height="60"-->
+        <!--      style="vertical-align: middle;"-->
+        <!--    />-->
+        <!--  </a><a href="https://www.bfz.de/">-->
+        <!--    <img-->
+        <!--      src="images/logo1.avif"-->
+        <!--      alt="BFZ Logo"-->
+        <!--      height="60"-->
+        <!--      style="vertical-align: middle; margin-left: 10px;"-->
+        <!--    />-->
+        <!--  </a>-->
+        <!--</div>-->
+      </div>
+    </div>
+  </nav>
+
+  <div class="container pt-4 pb-4" id="card-serach-container">
+    <h3>EdTec-ItemGen: Enhancing Retrieval-Augmented Item Generation Through Key Point Extraction</h3>
+    <br>
+    <!--<h3>System Demonstration Track @ ACL 2025</h3>-->
+    <!--<br>-->
+
+    <h4>About EdTec-ItemGen</h4>
+    <p>
+      Exam construction can be a time-consuming process, particularly in vocational education and
+      training (VET) contexts where subject matter experts must repeatedly craft and update large
+      numbers of domain-specific questions. By combining the power of large language models (LLMs)
+      with retrieval-augmented generation, EdTec-ItemGen ensures that new items are both contextually
+      aligned to the curricular materials and capable of covering key domain concepts.
+    </p>
+
+    <p>
+      <!-- Float the YouTube video to the left, like in a book  YOUTUBE VIDEO-->
+      <!--<iframe-->
+      <!--  src="https://www.youtube.com/embed/EwDntgWpADA"-->
+      <!--  frameborder="0"-->
+      <!--  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"-->
+      <!--  allowfullscreen-->
+      <!--  style="float: left; margin-right: 15px; margin-bottom: 10px; width: 560px; height: 315px;"-->
+      <!--></iframe>
+      The core innovation lies in our novel key point extraction technique, which relies on a
+      Mixed-Integer Linear Programming (MILP) approach to extract critical factoids from any relevant
+      text passages. By synthesizing and summarizing the key information, EdTec-ItemGen guides
+      LLMs to focus on the most salient points, thereby reducing hallucinations and boosting the
+      quality of generated items. This approach aligns with recent trends in retrieval-augmented
+      generation, where external knowledge sources complement an LLM's built-in reasoning.
+    </p>
+
+    <p>
+      Through TREC-RAG style evaluations, the paper demonstrates an 8% increase in essential
+      information coverage, as well as notable gains in grammatical quality and readability.
+      By comparing a pipeline without explicit key point extraction versus our MILP-driven approach,
+      the results confirm that carefully distilled prompts can greatly enhance overall item
+      coverage of key facts. This ensures that the generated content remains firmly anchored in
+      authoritative curriculum passages.
+    </p>
+
+    <p>
+      EdTec-ItemGen's demonstration highlights how educators can rapidly generate and refine test items,
+      collaborate on finalizing question sets, and seamlessly integrate newly created items into their
+      existing exam repositories. As a forward-looking solution, it addresses both the immediate needs of
+      VET providers and points toward broader applications, such as generating domain-specific items in
+      higher education and professional certification settings.
+    </p>
+
+    
+    <h4>Tool Workflow</h4>
+     Main paragraph that includes the floated image 
+    <p>
+      The high-level workflow below illustrates how EdTec-ItemGen transforms domain-specific texts
+      into fully developed test items. Key steps include retrieving relevant VET passages, extracting
+      crucial information via MILP-driven key point extraction, guiding the generation of new items
+      via prompts, and then evaluating and storing approved items in a dedicated repository.
+      
+       Float the image to the right, like in a book 
+      <img
+        src="images/diagram.png"
+        alt="EdTec-ItemGen Workflow Diagram"
+        style="float: right; margin-left: 15px; margin-bottom: 10px; width: 700px; height: auto;"
+      >
+    </p>
+
+     Bullet list explaining each step in the image 
+    <ul>
+      <li>
+        <strong>1. Database of Preprocessed VET Passages:</strong><br>
+        Contains the source texts that are indexed and ready for retrieval.
+      </li>
+      <li>
+        <strong>2. Search and Retrieval Module:</strong><br>
+        Users locate relevant passages using keywords or topic-based queries.
+      </li>
+      <li>
+        <strong>3. MILP-Driven Key Point Extraction:</strong><br>
+        Crucial facts are extracted from the retrieved text to reduce noise and guide the LLM.
+      </li>
+      <li>
+        <strong>4. Prompting the LLM for Test Item Generation:</strong><br>
+        Key points are sent to a large language model to craft new, context-aligned test items.
+      </li>
+      <li>
+        <strong>5. User Evaluation:</strong><br>
+        Subject matter experts review and refine generated items to ensure quality.
+      </li>
+      <li>
+        <strong>6. Item Database Population:</strong><br>
+        Approved test items are stored in a dedicated repository for later use.
+      </li>
+    </ul>
+  </div>
+  
+  <p> </p>
+  <p> </p>
+  <h4> </h4>
+
+ 
+  <script
+    src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.plot.ly/plotly-latest.min.js"
+  ></script>
+</body>
+</html>
