@@ -19,7 +19,7 @@ _build: { list: never, render: always }
       Designed to illustrate how retrieval, relevance modeling, and controlled composition can be combined in document-centric workflows.
     </p>
     <p style="margin:0;">
-      <a href="https://www.dfki.de/kiperweb/index.html" target="_blank" rel="noopener">View demo 🔗</a>
+      <a href="/demos/edtec-qbuilder/">View static demo 🔗</a>
     </p>
   </article>
 
