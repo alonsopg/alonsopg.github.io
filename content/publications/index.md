@@ -17,7 +17,7 @@ _build:
   <div style="margin-top:.35rem">
     <span style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#f0f0f0;user-select:none">🔗 TBA</span>
     <span style="margin:0 .35rem">·</span>
-    <span style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#d0f0d0;user-select:none">📚 CLEF / TalentCLEF</span>
+    <a href="https://talentclef.github.io/talentclef/docs/" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#d0f0d0;text-decoration:none;color:inherit;user-select:none">📚 CLEF / TalentCLEF</a>
     <span style="margin:0 .35rem">·</span>
     <details style="display:inline">
       <summary style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#e0e6ed;cursor:pointer;user-select:none">📑 Citation</summary>
@@ -43,7 +43,7 @@ _build:
   <div style="margin-top:.35rem">
     <span style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#f0f0f0;user-select:none">🔗 TBA</span>
     <span style="margin:0 .35rem">·</span>
-    <span style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#d0f0d0;user-select:none">📚 IWSLT</span>
+    <a href="https://iwslt.org/2026/" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#d0f0d0;text-decoration:none;color:inherit;user-select:none">📚 IWSLT</a>
     <span style="margin:0 .35rem">·</span>
     <details style="display:inline">
       <summary style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#e0e6ed;cursor:pointer;user-select:none">📑 Citation</summary>
@@ -71,7 +71,7 @@ _build:
   <div style="margin-top:.35rem">
     <a href="https://aclanthology.org/2025.ranlp-1.99/" target="_blank" rel="noopener noreferrer">🔗 ACL Anthology</a>
     <span style="margin:0 .35rem">·</span>
-    <span style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#d0f0d0;user-select:none">📚 RANLP</span>
+    <a href="https://ranlp.org/ranlp2025/" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#d0f0d0;text-decoration:none;color:inherit;user-select:none">📚 RANLP</a>
     <span style="margin:0 .35rem">·</span>
     <details style="display:inline">
       <summary style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#e0e6ed;cursor:pointer;user-select:none">📑 Citation</summary>
@@ -100,7 +100,7 @@ _build:
   <div style="margin-top:.35rem">
     <a href="https://aclanthology.org/2025.knowllm-1.2/" target="_blank" rel="noopener">🔗 ACL Anthology</a>
     <span style="margin:0 .35rem">·</span>
-    <span style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#d0f0d0;user-select:none">📚 ACL-KnowFM</span>
+    <a href="https://knowledgeable-lm.github.io/acl25/" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#d0f0d0;text-decoration:none;color:inherit;user-select:none">📚 ACL-KnowFM</a>
     <span style="margin:0 .35rem">·</span>
     <details style="display:inline">
       <summary style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#e0e6ed;cursor:pointer;user-select:none">📑 Citation</summary>
@@ -124,7 +124,7 @@ _build:
   <div style="margin-top:.35rem">
     <a href="https://aclanthology.org/2025.naacl-industry.16/" target="_blank" rel="noopener">🔗 ACL Anthology</a>
     <span style="margin:0 .35rem">·</span>
-    <span style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#d0f0d0;user-select:none">📚 NAACL</span>
+    <a href="https://2025.naacl.org/calls/industry/" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#d0f0d0;text-decoration:none;color:inherit;user-select:none">📚 NAACL</a>
     <span style="margin:0 .35rem">·</span>
     <details style="display:inline">
       <summary style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#e0e6ed;cursor:pointer;user-select:none">📑 Citation</summary>
@@ -150,7 +150,7 @@ _build:
   <div style="margin-top:.35rem">
     <a href="https://aclanthology.org/2024.naacl-demo.3/" target="_blank" rel="noopener">🔗 ACL Anthology</a>
     <span style="margin:0 .35rem">·</span>
-    <span style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#d0f0d0;user-select:none">📚 NAACL </span>
+    <a href="https://2024.naacl.org/calls/demos/" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#d0f0d0;text-decoration:none;color:inherit;user-select:none">📚 NAACL</a>
     <span style="margin:0 .35rem">·</span>
     <details style="display:inline">
       <summary style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#e0e6ed;cursor:pointer;user-select:none">📑 Citation</summary>
@@ -176,7 +176,7 @@ _build:
   <div style="margin-top:.35rem">
     <a href="https://aclanthology.org/2022.findings-aacl.39/" target="_blank" rel="noopener">🔗 ACL Anthology</a>
     <span style="margin:0 .35rem">·</span>
-    <span style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#d0f0d0;user-select:none">📚 AACL-IJCNLP</span>
+    <a href="https://www.aacl2022.org/" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#d0f0d0;text-decoration:none;color:inherit;user-select:none">📚 AACL-IJCNLP</a>
     <span style="margin:0 .35rem">·</span>
     <details style="display:inline">
       <summary style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#e0e6ed;cursor:pointer;user-select:none">📑 Citation</summary>
