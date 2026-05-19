@@ -4,7 +4,7 @@ menu: "main"
 _build: { list: never, render: always }
 ---
 
-<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;">
+<div style="display:flex;flex-direction:column;gap:16px;">
 
   <article style="border:1px solid #e5e7eb;border-radius:12px;padding:16px;background:#f9fafb;">
     <h3 style="margin:0 0 8px 0;">TalentCLEF Resume SERP</h3>
