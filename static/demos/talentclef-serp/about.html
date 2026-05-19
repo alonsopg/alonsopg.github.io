@@ -298,6 +298,56 @@
       </div>
     </section>
 
+    <section class="panel p-4 mb-4">
+      <div class="section-title">Temporal Benchmark Results</div>
+      <p>
+        The temporal benchmark report includes three Task A overall multilingual submissions for <code>alonsopg</code>. The strongest official result is the hybrid dense-sparse run, which keeps SPLADE re-ranking for both English and Spanish.
+      </p>
+      <div class="table-responsive">
+        <table class="table result-table align-middle">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Submission</th>
+              <th>System</th>
+              <th>AVG MAP</th>
+              <th>MAP en-en</th>
+              <th>MAP es-es</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#61</td>
+              <td><code>699840</code></td>
+              <td>JobBERT -> SPLADE_RRF</td>
+              <td><strong>0.5066</strong></td>
+              <td>0.5516</td>
+              <td><strong>0.4616</strong></td>
+            </tr>
+            <tr>
+              <td>#64</td>
+              <td><code>699843</code></td>
+              <td>Mixed: SPLADE_RRF for English, ColBERT for Spanish</td>
+              <td>0.4908</td>
+              <td>0.5516</td>
+              <td>0.4299</td>
+            </tr>
+            <tr>
+              <td>#70</td>
+              <td><code>699841</code></td>
+              <td>JobBERT -> ColBERT</td>
+              <td>0.4823</td>
+              <td>0.5347</td>
+              <td>0.4299</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="muted small mb-0">
+        These are official report values for the overall multilingual Task A table. No <code>alonsopg</code> entries were present in the cross-lingual, bias-controlled, or Task B tables in the provided benchmark HTML.
+      </p>
+    </section>
+
     <section class="panel p-4">
       <div class="section-title">Artifacts</div>
       <ul class="detail-list">
