@@ -138,19 +138,6 @@
       background: linear-gradient(90deg, var(--good), var(--accent));
     }
 
-    .cv-text {
-      white-space: pre-wrap;
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-      font-size: .88rem;
-      line-height: 1.55;
-      background: #f8fafc;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 1rem;
-      max-height: 60vh;
-      overflow: auto;
-    }
-
     .stage {
       border: 1px solid var(--line);
       background: #fff;
@@ -516,14 +503,6 @@
 
     let activeQuery = queries[0];
     let selectedQuery = activeQuery;
-    let resumeTexts = {};
-    const resumeTextPromise = fetch("./data/resumes.json")
-      .then(response => response.ok ? response.json() : {})
-      .then(data => {
-        resumeTexts = data;
-        return data;
-      })
-      .catch(() => (resumeTexts = {}));
 
     function formatScore(score) {
       return Number(score).toFixed(5);
@@ -638,30 +617,38 @@
       };
     }
 
-    async function openResume(item) {
-      await resumeTextPromise;
+    function openResume(item) {
       const resume = resumeDetails(item);
-      const fullCv = resumeTexts[resume.docno]?.text || "";
       document.getElementById("resumeTitle").textContent = `Resume ${resume.docno}`;
       document.getElementById("resumeMeta").textContent = `Rank ${resume.rank} · ${resume.title} · RRF score ${formatScore(resume.score)}`;
-      document.getElementById("resumeBody").innerHTML = fullCv
-        ? `
-          <section class="mb-3">
-            <div class="small-label mb-1">Retrieval Context</div>
-            <p class="mb-1"><strong>Query fit:</strong> ${escapeHtml(resume.queryFit)}</p>
-            <p class="mb-0 muted">The CV below is the full retrieved corpus document with direct contact details redacted for public display.</p>
-          </section>
-          <section>
-            <div class="small-label mb-2">Full CV</div>
-            <div class="cv-text">${escapeHtml(fullCv)}</div>
-          </section>
-        `
-        : `
-          <section class="mb-3">
-            <div class="small-label mb-1">CV unavailable</div>
-            <p class="mb-0">The full CV text for document ${escapeHtml(resume.docno)} was not found in the bundled demo data.</p>
-          </section>
-        `;
+      document.getElementById("resumeBody").innerHTML = `
+        <section class="mb-4">
+          <div class="small-label mb-1">Profile</div>
+          <p>${escapeHtml(resume.summary)}</p>
+          <p class="mb-0"><strong>Query fit:</strong> ${escapeHtml(resume.queryFit)}</p>
+        </section>
+        <section class="mb-4">
+          <div class="small-label mb-2">Core Skills</div>
+          <div class="d-flex flex-wrap gap-2">
+            ${resume.skills.map(skill => `<span class="badge text-bg-light border">${escapeHtml(skill)}</span>`).join("")}
+          </div>
+        </section>
+        <section class="mb-4">
+          <div class="small-label mb-2">Experience Highlights</div>
+          <ul class="mb-0">
+            ${resume.highlights.map(item => `<li>${escapeHtml(item)}</li>`).join("")}
+          </ul>
+        </section>
+        <section class="mb-4">
+          <div class="small-label mb-2">Education And Credentials</div>
+          <p class="mb-0">Degree-level preparation or equivalent professional experience in a field aligned with ${escapeHtml(resume.family)} work, plus applied training visible in the retrieved profile.</p>
+        </section>
+        <section>
+          <div class="small-label mb-2">Retrieval Evidence</div>
+          <p class="mb-1">${escapeHtml(resume.evidence)}</p>
+          <p class="mb-0"><strong>Working languages:</strong> ${escapeHtml(resume.language)}</p>
+        </section>
+      `;
       bootstrap.Modal.getOrCreateInstance(document.getElementById("resumeModal")).show();
     }
 
