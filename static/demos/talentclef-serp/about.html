@@ -272,7 +272,7 @@
         The public development set is small, so model selection is fragile. Public data also does not expose gender labels, which limits direct fairness analysis. ColBERT was used zero-shot rather than fine-tuned because public supervision is limited and late-interaction re-ranking is computationally demanding.
       </p>
       <p class="mb-0">
-        The SERP demo uses official run ordering, query ids, document ids, and scores. The original private resume text is not distributed with the public repository, so the click-through resume view is a demo reconstruction designed to explain what a result inspection experience would look like.
+        The SERP demo uses official run ordering, query ids, document ids, scores, and the corresponding CV text for the displayed test-set candidates. Direct contact details are redacted in the public demo, but the CV modal preserves the full document structure and content used for result inspection.
       </p>
     </section>
 
