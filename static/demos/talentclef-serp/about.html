@@ -77,6 +77,38 @@
       place-items: center;
       min-height: 100%;
     }
+
+    .section-title {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: .5rem;
+    }
+
+    .detail-list {
+      margin-bottom: 0;
+      padding-left: 1.2rem;
+    }
+
+    .detail-list li {
+      margin-bottom: .45rem;
+    }
+
+    .result-table {
+      margin-bottom: 0;
+    }
+
+    .result-table th {
+      color: var(--muted);
+      font-size: .78rem;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      font-weight: 700;
+    }
+
+    .callout {
+      border-left: 4px solid var(--accent);
+      background: #f5fafb;
+    }
   </style>
 </head>
 <body>
@@ -97,9 +129,15 @@
 
   <main class="container py-4">
     <section class="panel p-4 mb-4">
-      <h1 class="h3 mb-2">About This Demo</h1>
+      <div class="small-label mb-2">Working-notes paper</div>
+      <h1 class="h3 mb-2">Hybrid Dense-Sparse Retrieval for TalentCLEF Task A</h1>
+      <p class="mb-3">
+        This demo accompanies the TalentCLEF 2026 Task A submission
+        <strong>Hybrid Dense-Sparse Retrieval and Re-Ranking for Multilingual Resume Retrieval from Job Descriptions</strong>.
+        Task A is a contextualized job-person matching task: given a full job description, the system ranks candidate resumes by relevance.
+      </p>
       <p class="muted mb-0">
-        This page contains the explanatory material removed from the SERP: the retrieval pipeline, development metrics, and official run identifier.
+        The interface shows a SERP-style version of the primary run: JobBERT first-stage retrieval followed by SPLADE-based reciprocal-rank-fusion re-ranking.
       </p>
     </section>
 
@@ -126,13 +164,38 @@
       </div>
     </section>
 
-    <section class="panel p-4">
-      <div class="small-label mb-3">Pipeline</div>
+    <section class="panel p-4 mb-4">
+      <div class="section-title">Task And Data</div>
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <p>
+            The retrieval problem is difficult because both job descriptions and resumes are long, structured, multilingual, and packed with evidence. A good ranker needs broad semantic matching, but also needs to respect concrete evidence such as tools, technologies, certifications, credentials, and role-specific skills.
+          </p>
+          <ul class="detail-list">
+            <li>Tracks shown by the demo: monolingual English-English and Spanish-Spanish retrieval.</li>
+            <li>Development split: 10 queries and 472 resumes per language.</li>
+            <li>Test split: 40 queries and 476 resumes per language.</li>
+            <li>Main evaluation metric: MAP, with nDCG reported as an additional ranking-quality measure.</li>
+          </ul>
+        </div>
+        <div class="col-lg-5">
+          <div class="panel callout p-3">
+            <div class="small-label mb-2">Resume Representation</div>
+            <p class="mb-0">
+              Each resume is represented by normalized text built from profile, experience, skills, education, certifications, languages, and remaining resume content. This keeps the pipeline reproducible while preserving evidence useful for candidate matching.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel p-4 mb-4">
+      <div class="section-title">Retrieval Pipeline</div>
       <div class="row g-3 align-items-stretch">
         <div class="col-md">
           <div class="stage">
             <div class="fw-semibold">1. JobBERT-v3</div>
-            <div class="small muted">Dense candidate retrieval over CV text.</div>
+            <div class="small muted">A domain-adapted dense bi-encoder encodes job descriptions and resumes into a shared embedding space, producing the first candidate ranking efficiently.</div>
           </div>
         </div>
         <div class="col-md-auto d-none d-md-grid pipeline-arrow">
@@ -141,7 +204,7 @@
         <div class="col-md">
           <div class="stage">
             <div class="fw-semibold">2. SPLADE</div>
-            <div class="small muted">Sparse lexical reranking over the candidate pool.</div>
+            <div class="small muted">A sparse neural re-ranker adds lexical evidence, making exact and near-exact evidence such as skills, software names, credentials, and certifications more visible.</div>
           </div>
         </div>
         <div class="col-md-auto d-none d-md-grid pipeline-arrow">
@@ -150,10 +213,76 @@
         <div class="col-md">
           <div class="stage">
             <div class="fw-semibold">3. RRF</div>
-            <div class="small muted">Weighted reciprocal-rank fusion for the final top 100.</div>
+            <div class="small muted">The dense and sparse rankings are combined with reciprocal-rank fusion over the candidate set, yielding the primary submitted top-100 run.</div>
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="panel p-4 mb-4">
+      <div class="section-title">Systems Compared</div>
+      <p>
+        The paper compares lexical, sparse, dense, and second-stage re-ranking systems. JobBERT is already a strong baseline, so the key question is whether a complementary re-ranking signal improves candidate ranking.
+      </p>
+      <div class="table-responsive">
+        <table class="table result-table align-middle">
+          <thead>
+            <tr>
+              <th>Language</th>
+              <th>System</th>
+              <th>MAP@50</th>
+              <th>nDCG@50</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>English</td><td>JobBERT</td><td>0.7744</td><td>0.9245</td></tr>
+            <tr><td>English</td><td>JobBERT -> SPLADE_RRF</td><td><strong>0.7808</strong></td><td><strong>0.9294</strong></td></tr>
+            <tr><td>English</td><td>JobBERT -> ColBERT</td><td>0.7728</td><td>0.9225</td></tr>
+            <tr><td>Spanish</td><td>JobBERT</td><td>0.7299</td><td>0.8962</td></tr>
+            <tr><td>Spanish</td><td>JobBERT -> SPLADE_RRF</td><td><strong>0.7350</strong></td><td>0.9034</td></tr>
+            <tr><td>Spanish</td><td>JobBERT -> ColBERT</td><td>0.7348</td><td><strong>0.9086</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel p-4 mb-4">
+      <div class="section-title">What The Results Suggest</div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <ul class="detail-list">
+            <li>SPLADE re-ranking gives the best MAP in both English and Spanish.</li>
+            <li>The gain comes from combining broad semantic matching with precise lexical evidence.</li>
+            <li>Specific requirements such as tools, technologies, certifications, and skills remain central in resume retrieval.</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul class="detail-list">
+            <li>ColBERT is not the strongest overall system, but it is nearly tied with SPLADE in Spanish MAP.</li>
+            <li>ColBERT has the best Spanish nDCG@50, which suggests token-level late interaction is promising for multilingual resume ranking.</li>
+            <li>Standalone sparse retrieval and query-rewrite variants were less robust than the two-stage systems.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel p-4 mb-4">
+      <div class="section-title">Limitations And Demo Scope</div>
+      <p>
+        The public development set is small, so model selection is fragile. Public data also does not expose gender labels, which limits direct fairness analysis. ColBERT was used zero-shot rather than fine-tuned because public supervision is limited and late-interaction re-ranking is computationally demanding.
+      </p>
+      <p class="mb-0">
+        The SERP demo uses official run ordering, query ids, document ids, and scores. The original private resume text is not distributed with the public repository, so the click-through resume view is a demo reconstruction designed to explain what a result inspection experience would look like.
+      </p>
+    </section>
+
+    <section class="panel p-4">
+      <div class="section-title">Artifacts</div>
+      <ul class="detail-list">
+        <li>Primary run label: <code>alonso_jobbert_splade_rrf_at100</code>.</li>
+        <li>Repository: <a href="https://github.com/alonsopg/talentclef2026-taskA" target="_blank" rel="noopener noreferrer">github.com/alonsopg/talentclef2026-taskA</a>.</li>
+        <li>Demo page: <a href="./">TalentCLEF SERP search interface</a>.</li>
+      </ul>
     </section>
   </main>
 </body>
