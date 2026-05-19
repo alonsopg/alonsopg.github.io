@@ -3,9 +3,24 @@ title: "Demos 👾"
 menu: "main"
 _build: { list: never, render: always }
 ---
----
 
 <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;">
+
+  <article style="border:1px solid #e5e7eb;border-radius:12px;padding:16px;background:#f9fafb;">
+    <h3 style="margin:0 0 8px 0;">TalentCLEF Resume SERP</h3>
+    <p style="margin:0 0 10px 0;">
+      Interactive search demo for multilingual resume retrieval from job descriptions.
+    </p>
+    <p style="margin:0 0 10px 0;">
+      The demo exposes predefined TalentCLEF-style job queries, ranked candidate results, filtering controls, and clickable resume inspection views. It uses the submitted hybrid retrieval setup: JobBERT first-stage retrieval followed by SPLADE reranking with reciprocal-rank fusion.
+    </p>
+    <p style="margin:0 0 12px 0;">
+      Designed to illustrate how dense and sparse evidence can be combined in a SERP-style interface for candidate search.
+    </p>
+    <p style="margin:0;">
+      <a href="/demos/talentclef-serp/">View demo 🔗</a>
+    </p>
+  </article>
 
   <article style="border:1px solid #e5e7eb;border-radius:12px;padding:16px;background:#f9fafb;">
     <h3 style="margin:0 0 8px 0;">EdTec-QBuilder</h3>
