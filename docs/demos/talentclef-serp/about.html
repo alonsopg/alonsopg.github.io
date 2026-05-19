@@ -109,6 +109,26 @@
       border-left: 4px solid var(--accent);
       background: #f5fafb;
     }
+
+    .approach-step {
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 8px;
+      padding: 1rem;
+      height: 100%;
+    }
+
+    .step-number {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      display: inline-grid;
+      place-items: center;
+      font-weight: 700;
+      margin-bottom: .75rem;
+    }
   </style>
 </head>
 <body>
@@ -190,32 +210,44 @@
     </section>
 
     <section class="panel p-4 mb-4">
-      <div class="section-title">Retrieval Pipeline</div>
-      <div class="row g-3 align-items-stretch">
-        <div class="col-md">
-          <div class="stage">
-            <div class="fw-semibold">1. JobBERT-v3</div>
-            <div class="small muted">A domain-adapted dense bi-encoder encodes job descriptions and resumes into a shared embedding space, producing the first candidate ranking efficiently.</div>
+      <div class="section-title">How The Approach Works</div>
+      <p>
+        The submitted system is a two-stage ranker. The first stage finds semantically plausible candidates; the second stage reorders those candidates using lexical evidence that is especially important in hiring contexts.
+      </p>
+      <div class="row g-3 align-items-stretch mb-4">
+        <div class="col-lg-4">
+          <div class="approach-step">
+            <span class="step-number">1</span>
+            <div class="fw-semibold mb-2">Build resume and query text</div>
+            <p class="small muted mb-0">
+              Each CV is converted into a retrieval document by concatenating profile, experience, skills, education, certifications, languages, and remaining resume content. Job descriptions are normalized into query text.
+            </p>
           </div>
         </div>
-        <div class="col-md-auto d-none d-md-grid pipeline-arrow">
-          <i class="bi bi-arrow-right"></i>
-        </div>
-        <div class="col-md">
-          <div class="stage">
-            <div class="fw-semibold">2. SPLADE</div>
-            <div class="small muted">A sparse neural re-ranker adds lexical evidence, making exact and near-exact evidence such as skills, software names, credentials, and certifications more visible.</div>
+        <div class="col-lg-4">
+          <div class="approach-step">
+            <span class="step-number">2</span>
+            <div class="fw-semibold mb-2">Retrieve candidates with JobBERT</div>
+            <p class="small muted mb-0">
+              TechWolf/JobBERT-v3 encodes the job description and CVs into the same embedding space. This dense first stage captures broad role compatibility even when the job and resume use different wording.
+            </p>
           </div>
         </div>
-        <div class="col-md-auto d-none d-md-grid pipeline-arrow">
-          <i class="bi bi-arrow-right"></i>
-        </div>
-        <div class="col-md">
-          <div class="stage">
-            <div class="fw-semibold">3. RRF</div>
-            <div class="small muted">The dense and sparse rankings are combined with reciprocal-rank fusion over the candidate set, yielding the primary submitted top-100 run.</div>
+        <div class="col-lg-4">
+          <div class="approach-step">
+            <span class="step-number">3</span>
+            <div class="fw-semibold mb-2">Re-rank with SPLADE evidence</div>
+            <p class="small muted mb-0">
+              SPLADE adds a sparse neural signal over the JobBERT candidate set. This makes exact and expanded lexical evidence, such as tools, certifications, domain terms, and required skills, count more directly.
+            </p>
           </div>
         </div>
+      </div>
+      <div class="panel callout p-3">
+        <div class="small-label mb-2">Final Ranking</div>
+        <p class="mb-0">
+          The final submitted run combines the JobBERT candidate ranking and the SPLADE ranking with reciprocal-rank fusion. RRF rewards candidates that appear high in both rankings while still allowing either dense semantic evidence or sparse lexical evidence to move a strong candidate upward.
+        </p>
       </div>
     </section>
 
@@ -264,16 +296,6 @@
           </ul>
         </div>
       </div>
-    </section>
-
-    <section class="panel p-4 mb-4">
-      <div class="section-title">Limitations And Demo Scope</div>
-      <p>
-        The public development set is small, so model selection is fragile. Public data also does not expose gender labels, which limits direct fairness analysis. ColBERT was used zero-shot rather than fine-tuned because public supervision is limited and late-interaction re-ranking is computationally demanding.
-      </p>
-      <p class="mb-0">
-        The SERP demo uses official run ordering, query ids, document ids, and scores. The original private resume text is not distributed with the public repository, so the click-through resume view is a demo reconstruction designed to explain what a result inspection experience would look like.
-      </p>
     </section>
 
     <section class="panel p-4">
