@@ -1,20 +1,33 @@
-# deploy.sh
 #!/usr/bin/env bash
 set -euo pipefail
+
+# deploy.sh
 
 # Config
 BASEURL="https://alonsopg.github.io/"
 DEST="docs"
 BRANCH="main"
 
+# Optional local secrets/config. This file is ignored by git.
+# Example:
+#   PLAUSIBLE_API_KEY="..."
+#   PLAUSIBLE_SITE_ID="alonsopg.github.io"
+#   PLAUSIBLE_DATE_RANGE="30d"
+if [ -f ".analytics.env" ]; then
+  set -a
+  # shellcheck disable=SC1091
+  source ".analytics.env"
+  set +a
+fi
+
 # Optional private analytics report.
 # To enable:
-#   export PLAUSIBLE_API_KEY="..."
-#   export PLAUSIBLE_SITE_ID="alonsopg.github.io"
-#   export PLAUSIBLE_DATE_RANGE="30d"   # optional: 24h, 7d, 30d, month, all, ...
+#   1. Create a Plausible site for alonsopg.github.io.
+#   2. Enable params.analytics.plausibleEnabled in hugo.toml.
+#   3. Put PLAUSIBLE_API_KEY in .analytics.env or export it before running.
 print_country_analytics() {
   if [ -z "${PLAUSIBLE_API_KEY:-}" ]; then
-    echo "Analytics country report skipped: set PLAUSIBLE_API_KEY to enable."
+    echo "Analytics country report skipped: set PLAUSIBLE_API_KEY in .analytics.env or export it before running."
     return 0
   fi
 
