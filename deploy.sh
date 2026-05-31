@@ -26,6 +26,10 @@ fi
 #   2. Enable params.analytics.plausibleEnabled in hugo.toml.
 #   3. Put PLAUSIBLE_API_KEY in .analytics.env or export it before running.
 print_country_analytics() {
+  if ! grep -Eq '^[[:space:]]*plausibleEnabled[[:space:]]*=[[:space:]]*true' "hugo.toml"; then
+    echo "Analytics tracking is disabled: set plausibleEnabled = true in hugo.toml after creating the Plausible site."
+  fi
+
   if [ -z "${PLAUSIBLE_API_KEY:-}" ]; then
     echo "Analytics country report skipped: set PLAUSIBLE_API_KEY in .analytics.env or export it before running."
     return 0
