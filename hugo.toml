@@ -11,6 +11,12 @@ publishDir = "docs"            # <- GitHub Pages will serve from /docs
   mainSections = ["posts"]
   customCSS = ["css/custom.css"]
 
+  # Optional privacy-preserving analytics.
+  # Enable after creating a Plausible site for alonsopg.github.io.
+  [params.analytics]
+    plausibleEnabled = false
+    plausibleDomain = "alonsopg.github.io"
+
 [menu]
   [[menu.main]]
     name = "Experience"
