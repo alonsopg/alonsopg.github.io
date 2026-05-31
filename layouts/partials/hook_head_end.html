@@ -1,5 +1,5 @@
 {{- with .Site.Params.analytics -}}
-  {{- if and .plausibleEnabled .plausibleDomain -}}
-    <script defer data-domain="{{ .plausibleDomain }}" src="{{ .plausibleScript | default "https://plausible.io/js/script.js" }}"></script>
+  {{- if and .goatCounterEnabled .goatCounterCode -}}
+    <script data-goatcounter="https://{{ .goatCounterCode }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   {{- end -}}
 {{- end -}}

@@ -11,11 +11,11 @@ publishDir = "docs"            # <- GitHub Pages will serve from /docs
   mainSections = ["posts"]
   customCSS = ["css/custom.css"]
 
-  # Optional privacy-preserving analytics.
-  # Enable after creating a Plausible site for alonsopg.github.io.
+  # Privacy-preserving analytics with GoatCounter.
+  # Create/claim https://alonsopg.goatcounter.com for the counter to receive data.
   [params.analytics]
-    plausibleEnabled = false
-    plausibleDomain = "alonsopg.github.io"
+    goatCounterEnabled = true
+    goatCounterCode = "alonsopg"
 
 [menu]
   [[menu.main]]

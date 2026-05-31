@@ -10,9 +10,8 @@ BRANCH="main"
 
 # Optional local secrets/config. This file is ignored by git.
 # Example:
-#   PLAUSIBLE_API_KEY="..."
-#   PLAUSIBLE_SITE_ID="alonsopg.github.io"
-#   PLAUSIBLE_DATE_RANGE="30d"
+#   GOATCOUNTER_API_KEY="..."
+#   GOATCOUNTER_CODE="alonsopg"
 if [ -f ".analytics.env" ]; then
   set -a
   # shellcheck disable=SC1091
@@ -22,16 +21,19 @@ fi
 
 # Optional private analytics report.
 # To enable:
-#   1. Create a Plausible site for alonsopg.github.io.
-#   2. Enable params.analytics.plausibleEnabled in hugo.toml.
-#   3. Put PLAUSIBLE_API_KEY in .analytics.env or export it before running.
+#   1. Create/claim https://alonsopg.goatcounter.com.
+#   2. Keep params.analytics.goatCounterEnabled = true in hugo.toml.
+#   3. Optional: put GOATCOUNTER_API_KEY in .analytics.env to print a country table.
 print_country_analytics() {
-  if ! grep -Eq '^[[:space:]]*plausibleEnabled[[:space:]]*=[[:space:]]*true' "hugo.toml"; then
-    echo "Analytics tracking is disabled: set plausibleEnabled = true in hugo.toml after creating the Plausible site."
+  local site_code="${GOATCOUNTER_CODE:-alonsopg}"
+
+  if ! grep -Eq '^[[:space:]]*goatCounterEnabled[[:space:]]*=[[:space:]]*true' "hugo.toml"; then
+    echo "Analytics tracking is disabled: set goatCounterEnabled = true in hugo.toml."
   fi
 
-  if [ -z "${PLAUSIBLE_API_KEY:-}" ]; then
-    echo "Analytics country report skipped: set PLAUSIBLE_API_KEY in .analytics.env or export it before running."
+  if [ -z "${GOATCOUNTER_API_KEY:-}" ]; then
+    echo "GoatCounter dashboard: https://${site_code}.goatcounter.com"
+    echo "Country table skipped: set GOATCOUNTER_API_KEY in .analytics.env to print it during deploy."
     return 0
   fi
 
@@ -44,60 +46,107 @@ print_country_analytics() {
     return 0
   }
 
-  local site_id="${PLAUSIBLE_SITE_ID:-alonsopg.github.io}"
-  local date_range="${PLAUSIBLE_DATE_RANGE:-30d}"
+  local api="https://${site_code}.goatcounter.com/api/v0"
   local response_file
+  local export_file
   response_file="$(mktemp)"
+  export_file="$(mktemp)"
 
   echo
-  echo "Visitor countries from Plausible (site=$site_id, range=$date_range)"
+  echo "Visitor countries from GoatCounter (site=${site_code})"
 
   if ! curl -fsS \
     --request POST \
-    --header "Authorization: Bearer ${PLAUSIBLE_API_KEY}" \
+    --header "Authorization: Bearer ${GOATCOUNTER_API_KEY}" \
     --header "Content-Type: application/json" \
-    --url "https://plausible.io/api/v2/query" \
-    --data "{
-      \"site_id\": \"${site_id}\",
-      \"metrics\": [\"visitors\", \"visits\", \"pageviews\"],
-      \"date_range\": \"${date_range}\",
-      \"dimensions\": [\"visit:country_name\"],
-      \"filters\": [[\"is_not\", \"visit:country_name\", [\"\"]]],
-      \"order_by\": [[\"visitors\", \"desc\"]],
-      \"pagination\": {\"limit\": 50, \"offset\": 0}
-    }" > "$response_file"; then
-    echo "Could not fetch Plausible analytics. Check PLAUSIBLE_API_KEY and PLAUSIBLE_SITE_ID."
-    rm -f "$response_file"
+    --url "${api}/export" > "$response_file"; then
+    echo "Could not start GoatCounter export. Check GOATCOUNTER_API_KEY and GOATCOUNTER_CODE."
+    rm -f "$response_file" "$export_file"
     return 0
   fi
 
-  python3 - "$response_file" <<'PY'
+  local export_id
+  export_id="$(python3 - "$response_file" <<'PY'
 import json
 import sys
 
 path = sys.argv[1]
 with open(path, "r", encoding="utf-8") as handle:
     payload = json.load(handle)
+print(payload.get("id", ""))
+PY
+)"
 
-if payload.get("error"):
-    print(f"Plausible API error: {payload['error']}")
-    raise SystemExit(0)
+  if [ -z "$export_id" ]; then
+    echo "Could not read GoatCounter export id."
+    rm -f "$response_file" "$export_file"
+    return 0
+  fi
 
-rows = payload.get("results", [])
-if not rows:
-    print("No country data for this range yet.")
+  for _ in 1 2 3 4 5 6 7 8 9 10; do
+    curl -fsS \
+      --header "Authorization: Bearer ${GOATCOUNTER_API_KEY}" \
+      --header "Content-Type: application/json" \
+      --url "${api}/export/${export_id}" > "$response_file" || true
+
+    if python3 - "$response_file" <<'PY'
+import json
+import sys
+with open(sys.argv[1], "r", encoding="utf-8") as handle:
+    payload = json.load(handle)
+raise SystemExit(0 if payload.get("finished_at") else 1)
+PY
+    then
+      break
+    fi
+    sleep 2
+  done
+
+  if ! curl -fsS \
+    --header "Authorization: Bearer ${GOATCOUNTER_API_KEY}" \
+    --url "${api}/export/${export_id}/download" > "$export_file"; then
+    echo "Could not download GoatCounter export. Exports can be rate-limited; try again later."
+    rm -f "$response_file" "$export_file"
+    return 0
+  fi
+
+  python3 - "$export_file" <<'PY'
+import csv
+import gzip
+import io
+import sys
+from collections import Counter, defaultdict
+
+with open(sys.argv[1], "rb") as handle:
+    raw = handle.read()
+
+if raw[:2] == b"\x1f\x8b":
+    raw = gzip.decompress(raw)
+
+reader = csv.DictReader(io.StringIO(raw.decode("utf-8", errors="replace")))
+pageviews = Counter()
+sessions = defaultdict(set)
+
+for row in reader:
+    location = (row.get("Location") or "Unknown").strip() or "Unknown"
+    country = location.split("-", 1)[0] if location != "Unknown" else "Unknown"
+    session = (row.get("Session") or "").strip()
+    pageviews[country] += 1
+    if session:
+        sessions[country].add(session)
+
+if not pageviews:
+    print("No country data exported yet.")
     raise SystemExit(0)
 
 print()
-print("| Country | Visitors | Visits | Pageviews |")
-print("| --- | ---: | ---: | ---: |")
-for row in rows:
-    country = row.get("dimensions", ["Unknown"])[0] or "Unknown"
-    visitors, visits, pageviews = (row.get("metrics", []) + [0, 0, 0])[:3]
-    print(f"| {country} | {visitors} | {visits} | {pageviews} |")
+print("| Country | Visitors | Pageviews |")
+print("| --- | ---: | ---: |")
+for country, views in pageviews.most_common(50):
+    print(f"| {country} | {len(sessions[country])} | {views} |")
 PY
 
-  rm -f "$response_file"
+  rm -f "$response_file" "$export_file"
   echo
 }
 
