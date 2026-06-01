@@ -1,0 +1,60 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  deployments: write
+  id-token: write
+  pages: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Clear stale Pages deployment locks
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          set +e
+          deployments=$(curl -fsS \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${REPOSITORY}/deployments?environment=github-pages&per_page=20" \
+            | python3 -c 'import json,sys; print(" ".join(str(item["id"]) for item in json.load(sys.stdin)))')
+
+          for deployment in ${deployments}; do
+            curl -fsS -X POST \
+              -H "Authorization: Bearer ${GH_TOKEN}" \
+              -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/${REPOSITORY}/deployments/${deployment}/statuses" \
+              -d '{"state":"inactive","environment":"github-pages","description":"Cleared before publishing the latest docs artifact."}' \
+              || true
+          done
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
