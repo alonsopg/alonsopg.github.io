@@ -3,3 +3,63 @@
     <script data-goatcounter="https://{{ .goatCounterCode }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   {{- end -}}
 {{- end -}}
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var citationSummaries = document.querySelectorAll(".post details > summary");
+
+    function fallbackClipboard(text) {
+      var textarea = document.createElement("textarea");
+      textarea.value = text;
+      textarea.setAttribute("readonly", "");
+      textarea.style.position = "fixed";
+      textarea.style.top = "-9999px";
+      document.body.appendChild(textarea);
+      textarea.select();
+
+      try {
+        document.execCommand("copy");
+        return Promise.resolve();
+      } catch (error) {
+        return Promise.reject(error);
+      } finally {
+        document.body.removeChild(textarea);
+      }
+    }
+
+    function writeClipboard(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(text).catch(function () {
+          return fallbackClipboard(text);
+        });
+      }
+
+      return fallbackClipboard(text);
+    }
+
+    citationSummaries.forEach(function (summary) {
+      if (!summary.textContent.includes("Citation")) return;
+
+      var details = summary.parentElement;
+      var citation = details ? details.querySelector("pre") : null;
+      if (!citation) return;
+
+      var defaultLabel = summary.textContent.trim();
+      summary.title = "Copy BibTeX citation";
+
+      summary.addEventListener("click", function () {
+        writeClipboard(citation.textContent.trim()).then(function () {
+          summary.textContent = "Copied";
+          window.setTimeout(function () {
+            summary.textContent = defaultLabel;
+          }, 1400);
+        }).catch(function () {
+          summary.textContent = "Copy failed";
+          window.setTimeout(function () {
+            summary.textContent = defaultLabel;
+          }, 1400);
+        });
+      });
+    });
+  });
+</script>
