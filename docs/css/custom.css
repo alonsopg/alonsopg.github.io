@@ -166,16 +166,17 @@ html, body {
 .post h2 { font-size: 20px; margin-top: 1rem; color: #222; }
 .post h3 { font-size: 17px; margin-top: 0.75rem; color: #222; }
 
-/* Publication citations open as a fixed top-right BibTeX panel. */
-.post details[open] > pre {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  z-index: 1000;
-  width: min(520px, calc(100vw - 2rem));
-  max-height: min(70vh, 520px);
-  margin: 0;
-  padding: 1rem;
+/* Publication citation blocks keep their inline flow and expose a copy control. */
+.post details.citation-details[open] {
+  display: block !important;
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+.post details.citation-details > pre {
+  margin: 0.55rem 0 0;
+  padding: 2.1rem 1rem 1rem;
+  max-width: 100%;
   overflow: auto;
   white-space: pre-wrap;
   word-break: break-word;
@@ -183,17 +184,31 @@ html, body {
   background: #fff;
   border: 1px solid #d8dee9;
   border-radius: 8px;
-  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.18);
 }
 
-@media (max-width: 48em) {
-  .post details[open] > pre {
-    top: 0.75rem;
-    right: 0.75rem;
-    left: 0.75rem;
-    width: auto;
-    max-height: 60vh;
-  }
+.post .citation-copy-button {
+  display: none;
+}
+
+.post details.citation-details[open] .citation-copy-button {
+  display: inline-flex;
+  position: absolute;
+  top: 2.4rem;
+  right: 0.55rem;
+  align-items: center;
+  padding: 0.12rem 0.45rem;
+  font: inherit;
+  font-size: 0.82rem;
+  line-height: 1.2;
+  color: #111;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.post details.citation-details[open] .citation-copy-button:hover {
+  background: #eef2ff;
 }
 
 /* Align content with wider sidebar */

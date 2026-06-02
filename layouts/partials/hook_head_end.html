@@ -44,19 +44,29 @@
       var citation = details ? details.querySelector("pre") : null;
       if (!citation) return;
 
-      var defaultLabel = summary.textContent.trim();
-      summary.title = "Copy BibTeX citation";
+      details.classList.add("citation-details");
+      summary.title = "Show BibTeX citation";
 
-      summary.addEventListener("click", function () {
+      var copyButton = document.createElement("button");
+      copyButton.type = "button";
+      copyButton.className = "citation-copy-button";
+      copyButton.textContent = "Copy";
+      copyButton.title = "Copy BibTeX citation";
+      details.insertBefore(copyButton, citation);
+
+      copyButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+
         writeClipboard(citation.textContent.trim()).then(function () {
-          summary.textContent = "Copied";
+          copyButton.textContent = "Copied";
           window.setTimeout(function () {
-            summary.textContent = defaultLabel;
+            copyButton.textContent = "Copy";
           }, 1400);
         }).catch(function () {
-          summary.textContent = "Copy failed";
+          copyButton.textContent = "Failed";
           window.setTimeout(function () {
-            summary.textContent = defaultLabel;
+            copyButton.textContent = "Copy";
           }, 1400);
         });
       });
