@@ -16,7 +16,7 @@ Hi, I'm Alonso, an NLP specialist who has been working on language technologies 
 
 <!-- About / Industry + Academic Background -->
 <div style="background-color:#f0f8ff; padding:10px; margin-bottom:30px;">
-I have worked across research labs, industry teams, and product environments on a wide range of NLP subtasks, from search, semantic matching, voice and conversational systems to educational technology, language generation, and model evaluation. My previous industry and research experience includes
+I have worked in three countries with international research and industry teams, contributing to a wide range of NLP subtasks: search, semantic matching, voice and conversational systems, educational technology, language generation, and model evaluation. My previous industry and research experience includes
 <a href="https://scads.ai/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">ScaDS.AI</a>,  
 <a href="https://www.att.com/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">AT&amp;T</a>,  
 <a href="https://www.globant.com/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">Globant</a>,  
