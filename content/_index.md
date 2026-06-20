@@ -29,7 +29,7 @@ I have worked in three countries with international research and industry teams,
 
 <!-- PhD + Research + Current Project -->
 <div style="background-color:#f0f8ff; padding:10px;">
-My doctoral and applied research has focused on <strong>vocational education and training (VET)</strong>, especially <strong>question banking</strong>: generating, storing, retrieving, and recommending questions for exam assembly with NLP. I develop retrieval, ranking, evaluation, and generation methods for domain-specific knowledge systems, with a broader interest in turning language technologies into reliable tools.
+During my doctorate research I focused on <strong>vocational education and training (VET)</strong>, especially <strong>question banking</strong>: generating, storing, retrieving, and recommending questions for exam assembly with NLP. I develop retrieval, ranking, evaluation, and generation methods for domain-specific knowledge systems, with a broader interest in turning language technologies into reliable tools.
 </div>
 
 
