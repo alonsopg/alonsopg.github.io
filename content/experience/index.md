@@ -7,9 +7,9 @@ _build: { list: never, render: always }
 
 
 ## Work Experience 💼
-- **Research Fellow**  
+- **Research Scientist / Applied NLP Researcher**  
   German Research Center for Artificial Intelligence (DFKI)  
-  📅 Since January 2023 · 📍 Berlin, Germany.
+  📅 Jan 2023 – Mar 2026 · 📍 Berlin, Germany.
 
 - **Research Fellow**  
   Universität Leipzig / ScaDS.AI  

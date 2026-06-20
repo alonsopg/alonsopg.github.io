@@ -22,12 +22,14 @@ _build: { list: never, render: always }
   </div>
 
   <div class="contact-map-wrap">
-    <h3>Location</h3>
-    <p><strong>Deutsches Forschungszentrum für Künstliche Intelligenz (DFKI - Berlin)</strong><br>
-    Lanolin Fabrik, Salzufer 15/16, 10587 Berlin 📍</p>
-    <div class="map">
-      {{< gmap q="Lanolin Fabrik, Salzufer 15/16, 10587 Berlin" >}}
-    </div>
+    <h3>Elsewhere</h3>
+    <p>I am easiest to reach by email or through my professional profiles.</p>
+    <p>
+      <a href="mailto:mail@alonsopg.com">mail@alonsopg.com</a><br>
+      <a href="https://www.linkedin.com/in/alonsopg/" target="_blank" rel="noopener noreferrer">LinkedIn</a><br>
+      <a href="https://github.com/alonsopg" target="_blank" rel="noopener noreferrer">GitHub</a><br>
+      <a href="https://scholar.google.com/citations?user=iIoiAGQAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+    </p>
   </div>
 
 </div>
