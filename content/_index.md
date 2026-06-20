@@ -9,7 +9,7 @@ _build: { list: never, render: always }
 ---
 
 <div style="background-color:#f0f8ff; padding:10px;">
-Hi, I'm Alonso, an NLP specialist who has been working on language technologies since 2016. I solve real problems with NLP, language models, and reasoning systems, turning applied research and R&D into useful tools for products, research, and decision-making.
+Hi, I'm Alonso, an NLP specialist who has been working on language technologies since 2016. I solve real problems with NLP, language models, reasoning systems, and AI engineering, turning applied research and R&D into useful tools for products, research, and decision-making.
 </div>
 
 ## About 
