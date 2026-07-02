@@ -11,11 +11,11 @@ _build:
 <div style="padding:12px 14px;margin:14px 0;border:1px solid #e6e6e6;border-left:6px solid #bbb;border-radius:8px;background:#f7fafc">
   <p style="margin:0 0 .35rem 0">
     Alonso Palomino. 2026.
-    <strong>Semantic Cloze Ranking as a Lightweight Auxiliary Objective for Strict-Small BabyLM Pretraining.</strong>
+    <strong>Exploring Auxiliary Objectives through Multi-Task Learning for Small-Data Language Model Pretraining: A BabyLM 2026 Submission.</strong>
     <em>BabyLM Challenge 2026, Strict-Small Track</em>.
   </p>
   <div style="margin-top:.35rem">
-    <a href="https://github.com/alonsopg/BabyLM-2026-submission/blob/multitask-semantic-cloze-clean/paper/semantic-cloze-multitask-babylm.pdf" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:.35rem;padding:.15rem .5rem;border:1px solid #fecaca;border-radius:.35rem;background:#fee2e2;text-decoration:none;color:#111;user-select:none">🔗<span>Paper</span></a>
+    <a href="/papers/babylm25-multitask-repair.pdf" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:.35rem;padding:.15rem .5rem;border:1px solid #fecaca;border-radius:.35rem;background:#fee2e2;text-decoration:none;color:#111;user-select:none">🔗<span>Paper</span></a>
     <span style="margin:0 .35rem">·</span>
     <a href="https://github.com/alonsopg/BabyLM-2026-submission/tree/multitask-semantic-cloze-clean" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:.3rem;padding:.15rem .5rem;border-radius:.35rem;background:#eef2ff;text-decoration:none;color:inherit;user-select:none"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12.1c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.6-1.5-1.5-1.9-1.5-1.9-1.2-.8.1-.8.1-.8 1.3.1 2 1.3 2 1.3 1.1 2 3 1.5 3.7 1.1.1-.8.4-1.5.8-1.8-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11.3 11.3 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1.1.8 2.3v3.4c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg><span>Code</span></a>
     <span style="margin:0 .35rem">·</span>
@@ -25,12 +25,12 @@ _build:
     <span style="margin:0 .35rem">·</span>
     <details style="display:inline">
       <summary style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#e0e6ed;cursor:pointer;user-select:none">📑 Citation</summary>
-      <pre>@unpublished{palomino-2026-semantic-cloze,
-  title  = {Semantic Cloze Ranking as a Lightweight Auxiliary Objective for Strict-Small {BabyLM} Pretraining},
+      <pre>@unpublished{palomino-2026-auxiliary-objectives,
+  title  = {Exploring Auxiliary Objectives through Multi-Task Learning for Small-Data Language Model Pretraining: A {BabyLM} 2026 Submission},
   author = {Palomino, Alonso},
   note   = {BabyLM Challenge 2026, Strict-Small Track submission},
   year   = {2026},
-  url    = {https://github.com/alonsopg/BabyLM-2026-submission/blob/multitask-semantic-cloze-clean/paper/semantic-cloze-multitask-babylm.pdf}
+  url    = {https://alonsopg.github.io/papers/babylm25-multitask-repair.pdf}
 }</pre>
     </details>
   </div>
