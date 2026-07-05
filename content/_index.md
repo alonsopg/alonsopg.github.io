@@ -20,6 +20,7 @@ My name is Alonso. I am an NLP specialist working on human language technologies
 
 <p>I have worked with research and industry teams across a wide range of NLP areas, including search, semantic matching, voice and conversational systems, educational technology, language generation, and model evaluation. My experience includes organizations such as
 <a href="https://scads.ai/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">ScaDS.AI</a>,  
+<a href="https://www.dfki.de/en/web" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">DFKI</a>,  
 <a href="https://www.att.com/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">AT&amp;T</a>,  
 <a href="https://www.globant.com/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">Globant</a>,  
 <a href="https://amadeus.com/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">Amadeus IT Group</a>, and 
