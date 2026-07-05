@@ -36,7 +36,6 @@ My background is in computer science. I hold a BSc in Computer Science from the 
 
 ## Interests
 * Natural Language Processing: **Real-World Applications**
-* Information Retrieval, Semantic Search, and Recommender Systems
-* Question Generation, Question Answering, and Educational NLP
-* Dialogue, Voice, and Conversational Systems
+* Information Retrieval, Semantic Search, Question Answering, and Recommender Systems
+* Dialogue Systems
 * Large Language Models: Foundations, Formal Frameworks, Applications, and Limitations
