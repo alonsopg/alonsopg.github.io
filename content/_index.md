@@ -37,5 +37,9 @@ My background is in computer science. I hold a BSc in Computer Science from the 
 ## Interests
 * Natural Language Processing: **Real-World Applications**
 * Information Retrieval, Semantic Search, Question Answering, and Recommender Systems
-* Dialogue Systems
+* Legal Natural Language Processing
+* Dialogue and Speech Technologies: Speech-to-Text (STT) and Text-to-Speech (TTS)
 * Large Language Models: Foundations, Formal Frameworks, Applications, and Limitations
+* Resource-Efficient Language Models: Pretraining, Post-Training, Compression, Inference Acceleration, and Deployment in Resource-Constrained Environments
+* Agentic AI Systems: Planning, Tool Use, and Autonomous Workflows
+* Language Models for Source Code Understanding and Reasoning
