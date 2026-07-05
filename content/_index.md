@@ -38,6 +38,7 @@ My background is in computer science. I hold a BSc in Computer Science from the 
 * Natural Language Processing: **Real-World Applications**
 * Information Retrieval, Semantic Search, Question Answering, and Recommender Systems
 * Legal Natural Language Processing
+* Multimodal NLP and Document Intelligence: OCR, Document Understanding, and Vision-Language Models
 * Dialogue and Speech Technologies: Speech-to-Text (STT) and Text-to-Speech (TTS)
 * Large Language Models: Foundations, Formal Frameworks, Applications, and Limitations
 * Resource-Efficient Language Models: Pretraining, Post-Training, Compression, Inference Acceleration, and Deployment in Resource-Constrained Environments
