@@ -16,20 +16,20 @@ My name is Alonso. I am an NLP specialist working on human language technologies
 
 <!-- About / Industry + Academic Background -->
 <div style="background-color:#f0f8ff; padding:10px; margin-bottom:30px;">
-I have worked in three countries with international research and industry teams, contributing to a wide range of NLP subtasks: search, semantic matching, voice and conversational systems, educational technology, language generation, and model evaluation. My previous industry and research experience includes
+<p>Over the past ten years, I have had the opportunity to work in Mexico, Germany, and the UK, gaining international experience with globally distributed software development teams.</p>
+
+<p>I have worked with research and industry teams across a wide range of NLP areas, including search, semantic matching, voice and conversational systems, educational technology, language generation, and model evaluation. My experience includes organizations such as
 <a href="https://scads.ai/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">ScaDS.AI</a>,  
 <a href="https://www.att.com/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">AT&amp;T</a>,  
 <a href="https://www.globant.com/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">Globant</a>,  
 <a href="https://amadeus.com/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">Amadeus IT Group</a>, and 
-<a href="https://www.sngular.com/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">Sngular</a>. I hold a PhD in Computer Science from 
-<a href="https://www.uni-bielefeld.de/fakultaeten/technische-fakultaet/arbeitsgruppen/kml/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">Bielefeld University's KML Group</a>, and also earned an MSc in Artificial Intelligence from the <a href="https://www.ed.ac.uk/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">University of Edinburgh</a> in the UK and a BSc in Computer Science from 
-<a href="https://www.unam.mx/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">UNAM</a> in Mexico.
+<a href="https://www.sngular.com/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">Sngular</a>.</p>
 </div>
 
 
 <!-- PhD + Research + Current Project -->
 <div style="background-color:#f0f8ff; padding:10px;">
-During my doctorate research I focused on <strong>vocational education and training (VET)</strong>, especially <strong>question banking</strong>: generating, storing, retrieving, and recommending questions for exam assembly with NLP. I develop retrieval, ranking, evaluation, and generation methods for domain-specific knowledge systems, with a broader interest in turning language technologies into reliable tools.
+My background is in computer science. I hold a BSc in Computer Science from the <a href="https://www.unam.mx/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">National Autonomous University of Mexico (UNAM)</a>, an MSc in Artificial Intelligence from the <a href="https://www.ed.ac.uk/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">University of Edinburgh</a>, and a PhD in Computer Science from <a href="https://www.uni-bielefeld.de/fakultaeten/technische-fakultaet/arbeitsgruppen/kml/" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">Bielefeld University</a>, with research conducted at <a href="https://www.dfki.de/en/web" target="_blank" style="color:#1e3a8a; font-weight:bold; text-decoration:none;">DFKI</a>. During my doctorate, I focused on enhancing question banks with NLP, including generating, storing, retrieving, and recommending questions for exam assembly workflows. This work spanned retrieval, ranking, evaluation, and generation methods for domain-specific knowledge systems, reflecting my broader interest in turning language technologies into reliable tools.
 </div>
 
 
