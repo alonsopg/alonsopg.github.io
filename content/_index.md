@@ -9,7 +9,7 @@ _build: { list: never, render: always }
 ---
 
 <div style="background-color:#f0f8ff; padding:10px;">
-Hi, I'm Alonso, an NLP specialist who has been working on language technologies since 2016. I solve real problems with NLP, language models, reasoning systems, and AI engineering, turning applied research and R&D into useful tools for products, research, and decision-making.
+My name is Alonso. I am an NLP specialist working on human language technologies since 2016. I build intelligent systems that solve practical problems using language and reasoning models. I translate foundational methods from computational linguistics and NLP into useful tools and products designed to augment human capabilities with AI. In recent years, I have focused on turning research and development into reliable, real-world technology.
 </div>
 
 ## About 
