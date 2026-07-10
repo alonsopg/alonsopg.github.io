@@ -22,14 +22,11 @@ _build: { list: never, render: always }
   </div>
 
   <div class="contact-map-wrap">
-    <h3>Elsewhere</h3>
-    <p>I am easiest to reach by email or through my professional profiles.</p>
-    <p>
-      <a href="mailto:mail@alonsopg.com">mail@alonsopg.com</a><br>
-      <a href="https://www.linkedin.com/in/alonsopg/" target="_blank" rel="noopener noreferrer">LinkedIn</a><br>
-      <a href="https://github.com/alonsopg" target="_blank" rel="noopener noreferrer">GitHub</a><br>
-      <a href="https://scholar.google.com/citations?user=iIoiAGQAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-    </p>
+    <h3>Location</h3>
+    <p>Leadenhall Market, London</p>
+    <div class="map">
+      <iframe src="https://www.google.com/maps?q=Leadenhall%20Market%2C%20London%2C%20UK&output=embed" width="100%" height="400" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Map: Leadenhall Market, London"></iframe>
+    </div>
   </div>
 
 </div>
