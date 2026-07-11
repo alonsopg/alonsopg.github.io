@@ -11,6 +11,32 @@ _build:
 <div style="padding:12px 14px;margin:14px 0;border:1px solid #e6e6e6;border-left:6px solid #bbb;border-radius:8px;background:#f7fafc">
   <p style="margin:0 0 .35rem 0">
     Alonso Palomino. 2026.
+    <strong>Improving German VET Test Item Retrieval with ESCO-Grounded Knowledge Graph Re-Ranking.</strong>
+    <em>KONVENS 2026, accepted for poster presentation</em>.
+  </p>
+  <div style="margin-top:.35rem">
+    <a href="https://openreview.net/forum?id=hS8PCmKoRn" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:.35rem;padding:.15rem .5rem;border:1px solid #fecaca;border-radius:.35rem;background:#fee2e2;text-decoration:none;color:#111;user-select:none">🔗<span>Paper</span></a>
+    <span style="margin:0 .35rem">·</span>
+    <a href="https://konvens2026.uni-hamburg.de/" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#d0f0d0;text-decoration:none;color:inherit;user-select:none">📚 KONVENS</a>
+    <span style="margin:0 .35rem">·</span>
+    <details style="display:inline">
+      <summary style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#e0e6ed;cursor:pointer;user-select:none">📑 Citation</summary>
+      <pre>@inproceedings{palomino-2026-improving-german-vet,
+  title     = {Improving German {VET} Test Item Retrieval with {ESCO}-Grounded Knowledge Graph Re-Ranking},
+  author    = {Palomino, Alonso},
+  booktitle = {Proceedings of the Conference on Natural Language Processing ({KONVENS} 2026)},
+  year      = {2026},
+  address   = {Hamburg, Germany},
+  note      = {Accepted for poster presentation},
+  url       = {https://openreview.net/forum?id=hS8PCmKoRn}
+}</pre>
+    </details>
+  </div>
+</div>
+
+<div style="padding:12px 14px;margin:14px 0;border:1px solid #e6e6e6;border-left:6px solid #bbb;border-radius:8px;background:#f7fafc">
+  <p style="margin:0 0 .35rem 0">
+    Alonso Palomino. 2026.
     <strong>Exploring Auxiliary Objectives through Multi-Task Learning for Small-Data Language Model Pretraining: A BabyLM 2026 Submission.</strong>
     <em>BabyLM Challenge 2026, Strict-Small Track</em>.
   </p>
