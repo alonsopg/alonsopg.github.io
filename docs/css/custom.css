@@ -166,6 +166,38 @@ html, body {
 .post h2 { font-size: 20px; margin-top: 1rem; color: #222; }
 .post h3 { font-size: 17px; margin-top: 0.75rem; color: #222; }
 
+/* Publication action pills stay on one row and scroll horizontally on small screens. */
+.post .publication-links {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 0.35rem;
+  max-width: 100%;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+  white-space: nowrap;
+  scrollbar-width: thin;
+}
+
+.post .publication-links > * {
+  flex: 0 0 auto;
+}
+
+.post .publication-links > span[style*="margin"] {
+  margin: 0 !important;
+  color: #777;
+}
+
+.post .publication-links a,
+.post .publication-links summary {
+  white-space: nowrap;
+}
+
+.post .publication-links details.citation-details[open] {
+  margin-top: 0;
+  max-width: min(720px, calc(100vw - 3rem));
+}
+
 /* Publication citation blocks keep their inline flow and expose a copy control. */
 .post details.citation-details[open] {
   display: block !important;
@@ -184,6 +216,12 @@ html, body {
   background: #fff;
   border: 1px solid #d8dee9;
   border-radius: 8px;
+}
+
+.post .publication-links details.citation-details > pre {
+  box-sizing: border-box;
+  width: min(720px, calc(100vw - 3rem));
+  max-height: 18rem;
 }
 
 .post .citation-copy-button {

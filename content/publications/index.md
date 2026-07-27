@@ -14,7 +14,7 @@ _build:
     <strong>Improving German VET Test Item Retrieval with ESCO-Grounded Knowledge Graph Re-Ranking.</strong>
     <em>KONVENS 2026</em>.
   </p>
-  <div style="margin-top:.35rem">
+  <div class="publication-links" style="margin-top:.35rem">
     <span style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#f0f0f0;user-select:none">🔗 TBA</span>
     <span style="margin:0 .35rem">·</span>
     <a href="https://anonymous.4open.science/r/ESCO-KGE-reranking-2D1C/" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:.3rem;padding:.15rem .5rem;border-radius:.35rem;background:#eef2ff;text-decoration:none;color:inherit;user-select:none"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12.1c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.6-1.5-1.5-1.9-1.5-1.9-1.2-.8.1-.8.1-.8 1.3.1 2 1.3 2 1.3 1.1 2 3 1.5 3.7 1.1.1-.8.4-1.5.8-1.8-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11.3 11.3 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1.1.8 2.3v3.4c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg><span>Code</span></a>
@@ -42,7 +42,7 @@ _build:
     <strong>Exploring Auxiliary Objectives through Multi-Task Learning for Small-Data Language Model Pretraining: A BabyLM 2026 Submission.</strong>
     <em>BabyLM Challenge 2026, Strict-Small Track</em>.
   </p>
-  <div style="margin-top:.35rem">
+  <div class="publication-links" style="margin-top:.35rem">
     <span style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#f0f0f0;user-select:none">🔗 TBA</span>
     <span style="margin:0 .35rem">·</span>
     <a href="https://github.com/alonsopg/BabyLM-2026-submission/tree/multitask-semantic-cloze-clean" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:.3rem;padding:.15rem .5rem;border-radius:.35rem;background:#eef2ff;text-decoration:none;color:inherit;user-select:none"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12.1c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.6-1.5-1.5-1.9-1.5-1.9-1.2-.8.1-.8.1-.8 1.3.1 2 1.3 2 1.3 1.1 2 3 1.5 3.7 1.1.1-.8.4-1.5.8-1.8-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11.3 11.3 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1.1.8 2.3v3.4c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg><span>Code</span></a>
@@ -70,7 +70,7 @@ _build:
     <strong>Hybrid Dense-Sparse Retrieval and Re-Ranking for Multilingual Resume Retrieval from Job Descriptions.</strong>
     <em>CLEF 2026 Working Notes, TalentCLEF 2026 Task A</em>.
   </p>
-  <div style="margin-top:.35rem">
+  <div class="publication-links" style="margin-top:.35rem">
     <a href="https://clef-staging.pages.dev/paper484.pdf" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:.35rem;padding:.15rem .5rem;border:1px solid #fecaca;border-radius:.35rem;background:#fee2e2;text-decoration:none;color:#111;user-select:none">🔗<span>Paper</span></a>
     <span style="margin:0 .35rem">·</span>
     <a href="https://github.com/alonsopg/talentclef2026-taskA" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:.3rem;padding:.15rem .5rem;border-radius:.35rem;background:#eef2ff;text-decoration:none;color:inherit;user-select:none"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12.1c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.6-1.5-1.5-1.9-1.5-1.9-1.2-.8.1-.8.1-.8 1.3.1 2 1.3 2 1.3 1.1 2 3 1.5 3.7 1.1.1-.8.4-1.5.8-1.8-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11.3 11.3 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1.1.8 2.3v3.4c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg><span>Code</span></a>
@@ -98,7 +98,7 @@ _build:
     <strong>Selected-Layer Codec Compression for Compact Speech Translation Models: An IWSLT 2026 English-to-Chinese Submission.</strong>
     <em>Proceedings of the 23rd International Conference on Spoken Language Translation (IWSLT 2026)</em>.
   </p>
-  <div style="margin-top:.35rem">
+  <div class="publication-links" style="margin-top:.35rem">
     <a href="https://aclanthology.org/2026.iwslt-1.4/" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:.35rem;padding:.15rem .5rem;border:1px solid #fecaca;border-radius:.35rem;background:#fee2e2;text-decoration:none;color:#111;user-select:none">🔗<span>Paper</span></a>
     <span style="margin:0 .35rem">·</span>
     <a href="https://github.com/alonsopg/iwslt-2026-model-compression" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:.3rem;padding:.15rem .5rem;border-radius:.35rem;background:#eef2ff;text-decoration:none;color:inherit;user-select:none"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12.1c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.6-1.5-1.5-1.9-1.5-1.9-1.2-.8.1-.8.1-.8 1.3.1 2 1.3 2 1.3 1.1 2 3 1.5 3.7 1.1.1-.8.4-1.5.8-1.8-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11.3 11.3 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1.1.8 2.3v3.4c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg><span>Code</span></a>
@@ -141,7 +141,7 @@ _build:
     <strong>Benchmarking Item Difficulty Classification in German Vocational Education and Training.</strong>
     <em>Proceedings of the 15th International Conference on Recent Advances in Natural Language Processing (RANLP)</em>.
   </p>
-  <div style="margin-top:.35rem">
+  <div class="publication-links" style="margin-top:.35rem">
     <a href="https://aclanthology.org/2025.ranlp-1.99/" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:.35rem;padding:.15rem .5rem;border:1px solid #fecaca;border-radius:.35rem;background:#fee2e2;text-decoration:none;color:#111;user-select:none">🔗<span>Paper</span></a>
     <span style="margin:0 .35rem">·</span>
     <a href="https://ranlp.org/ranlp2025/" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#d0f0d0;text-decoration:none;color:inherit;user-select:none">📚 RANLP</a>
@@ -170,7 +170,7 @@ _build:
     <strong>EdTec-ItemGen: Enhancing Retrieval-Augmented Item Generation Through Key Point Extraction.</strong>
     <em>Proceedings of the 3rd Workshop on Towards Knowledgeable Foundation Models (KnowFM). Association for Computational Linguistics</em>.
   </p>
-  <div style="margin-top:.35rem">
+  <div class="publication-links" style="margin-top:.35rem">
     <a href="https://aclanthology.org/2025.knowllm-1.2/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.35rem;padding:.15rem .5rem;border:1px solid #fecaca;border-radius:.35rem;background:#fee2e2;text-decoration:none;color:#111;user-select:none">🔗<span>Paper</span></a>
     <span style="margin:0 .35rem">·</span>
     <a href="/demos/edtec-itemgen/" style="display:inline-flex;align-items:center;gap:.3rem;padding:.15rem .5rem;border-radius:.35rem;background:#eef2ff;text-decoration:none;color:inherit;user-select:none"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12.1c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.6-1.5-1.5-1.9-1.5-1.9-1.2-.8.1-.8.1-.8 1.3.1 2 1.3 2 1.3 1.1 2 3 1.5 3.7 1.1.1-.8.4-1.5.8-1.8-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11.3 11.3 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1.1.8 2.3v3.4c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg><span>Code</span></a>
@@ -196,7 +196,7 @@ _build:
     <strong>Mitigating Bias in Item Retrieval for Enhancing Exam Assembly in Vocational Education Services.</strong>
     <em>Proceedings of the 2025 Conference of the North American Chapter of the Association for Computational Linguistics: Industry Track (NAACL)</em>.
   </p>
-  <div style="margin-top:.35rem">
+  <div class="publication-links" style="margin-top:.35rem">
     <a href="https://aclanthology.org/2025.naacl-industry.16/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.35rem;padding:.15rem .5rem;border:1px solid #fecaca;border-radius:.35rem;background:#fee2e2;text-decoration:none;color:#111;user-select:none">🔗<span>Paper</span></a>
     <span style="margin:0 .35rem">·</span>
     <a href="https://github.com/alonsopg/naacl25-bias-exam-assembly" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:.3rem;padding:.15rem .5rem;border-radius:.35rem;background:#eef2ff;text-decoration:none;color:inherit;user-select:none"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12.1c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.6-1.5-1.5-1.9-1.5-1.9-1.2-.8.1-.8.1-.8 1.3.1 2 1.3 2 1.3 1.1 2 3 1.5 3.7 1.1.1-.8.4-1.5.8-1.8-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11.3 11.3 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1.1.8 2.3v3.4c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg><span>Code</span></a>
@@ -224,7 +224,7 @@ _build:
     <strong>EdTec-QBuilder: A Semantic Retrieval Tool for Assembling Vocational Training Exams in German Language.</strong>
     <em>Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: System Demonstrations (NAACL)</em>.
   </p>
-  <div style="margin-top:.35rem">
+  <div class="publication-links" style="margin-top:.35rem">
     <a href="https://aclanthology.org/2024.naacl-demo.3/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.35rem;padding:.15rem .5rem;border:1px solid #fecaca;border-radius:.35rem;background:#fee2e2;text-decoration:none;color:#111;user-select:none">🔗<span>Paper</span></a>
     <span style="margin:0 .35rem">·</span>
     <a href="/demos/edtec-qbuilder/" style="display:inline-flex;align-items:center;gap:.3rem;padding:.15rem .5rem;border-radius:.35rem;background:#eef2ff;text-decoration:none;color:inherit;user-select:none"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12.1c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.6-1.5-1.5-1.9-1.5-1.9-1.2-.8.1-.8.1-.8 1.3.1 2 1.3 2 1.3 1.1 2 3 1.5 3.7 1.1.1-.8.4-1.5.8-1.8-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11.3 11.3 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1.1.8 2.3v3.4c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg><span>Code</span></a>
@@ -252,7 +252,7 @@ _build:
     <strong>Differential Bias: On the Perceptibility of Stance Imbalance in Argumentation.</strong>
     <em>Findings of the Association for Computational Linguistics: AACL-IJCNLP 2022</em>.
   </p>
-  <div style="margin-top:.35rem">
+  <div class="publication-links" style="margin-top:.35rem">
     <a href="https://aclanthology.org/2022.findings-aacl.39/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.35rem;padding:.15rem .5rem;border:1px solid #fecaca;border-radius:.35rem;background:#fee2e2;text-decoration:none;color:#111;user-select:none">🔗<span>Paper</span></a>
     <span style="margin:0 .35rem">·</span>
     <a href="https://www.aacl2022.org/" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#d0f0d0;text-decoration:none;color:inherit;user-select:none">📚 AACL-IJCNLP</a>
