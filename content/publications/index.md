@@ -71,7 +71,7 @@ _build:
     <em>CLEF 2026 Working Notes, TalentCLEF 2026 Task A</em>.
   </p>
   <div style="margin-top:.35rem">
-    <span style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#f0f0f0;user-select:none">🔗 TBA</span>
+    <a href="https://clef-staging.pages.dev/paper484.pdf" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:.35rem;padding:.15rem .5rem;border:1px solid #fecaca;border-radius:.35rem;background:#fee2e2;text-decoration:none;color:#111;user-select:none">🔗<span>Paper</span></a>
     <span style="margin:0 .35rem">·</span>
     <a href="https://github.com/alonsopg/talentclef2026-taskA" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:.3rem;padding:.15rem .5rem;border-radius:.35rem;background:#eef2ff;text-decoration:none;color:inherit;user-select:none"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12.1c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.6-1.5-1.5-1.9-1.5-1.9-1.2-.8.1-.8.1-.8 1.3.1 2 1.3 2 1.3 1.1 2 3 1.5 3.7 1.1.1-.8.4-1.5.8-1.8-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11.3 11.3 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.6-2.7 5.6-5.3 5.9.4.3.8 1.1.8 2.3v3.4c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg><span>Code</span></a>
     <span style="margin:0 .35rem">·</span>
@@ -86,7 +86,7 @@ _build:
   note      = {Working Notes for TalentCLEF 2026 Task A},
   year      = {2026},
   address   = {Jena, Germany},
-  url       = {TBA}
+  url       = {https://clef-staging.pages.dev/paper484.pdf}
 }</pre>
     </details>
   </div>
