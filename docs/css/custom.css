@@ -195,17 +195,27 @@ html, body {
 
 .post .publication-links details.citation-details[open] {
   margin-top: 0;
-  max-width: min(720px, calc(100vw - 3rem));
 }
 
-/* Publication citation blocks keep their inline flow and expose a copy control. */
+/* Publication citation blocks sit below the pill row and expose a copy control. */
 .post details.citation-details[open] {
   display: block !important;
   position: relative;
-  margin-top: 0.5rem;
+  margin-top: 0;
 }
 
-.post details.citation-details > pre {
+.post .citation-panel {
+  position: relative;
+  width: 100%;
+  margin-top: 0.55rem;
+}
+
+.post .citation-panel[hidden] {
+  display: none;
+}
+
+.post details.citation-details > pre,
+.post .citation-panel > pre {
   margin: 0.55rem 0 0;
   padding: 2.1rem 1rem 1rem;
   max-width: 100%;
@@ -218,9 +228,9 @@ html, body {
   border-radius: 8px;
 }
 
-.post .publication-links details.citation-details > pre {
+.post .citation-panel > pre {
   box-sizing: border-box;
-  width: min(720px, calc(100vw - 3rem));
+  width: 100%;
   max-height: 18rem;
 }
 
@@ -246,6 +256,28 @@ html, body {
 }
 
 .post details.citation-details[open] .citation-copy-button:hover {
+  background: #eef2ff;
+}
+
+.post .citation-panel .citation-copy-button {
+  display: inline-flex;
+  position: absolute;
+  top: 0.65rem;
+  right: 0.65rem;
+  align-items: center;
+  padding: 0.12rem 0.45rem;
+  font: inherit;
+  font-size: 0.82rem;
+  line-height: 1.2;
+  color: #111;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.post .citation-panel .citation-copy-button:hover {
   background: #eef2ff;
 }
 

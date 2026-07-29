@@ -47,12 +47,29 @@
       details.classList.add("citation-details");
       summary.title = "Show BibTeX citation";
 
+      var citationPanel = document.createElement("div");
+      citationPanel.className = "citation-panel";
+      citationPanel.hidden = !details.open;
+
       var copyButton = document.createElement("button");
       copyButton.type = "button";
       copyButton.className = "citation-copy-button";
       copyButton.textContent = "Copy";
       copyButton.title = "Copy BibTeX citation";
-      details.insertBefore(copyButton, citation);
+
+      citationPanel.appendChild(copyButton);
+      citationPanel.appendChild(citation);
+
+      var linksRow = details.closest(".publication-links");
+      if (linksRow && linksRow.parentElement) {
+        linksRow.insertAdjacentElement("afterend", citationPanel);
+      } else {
+        details.appendChild(citationPanel);
+      }
+
+      details.addEventListener("toggle", function () {
+        citationPanel.hidden = !details.open;
+      });
 
       copyButton.addEventListener("click", function (event) {
         event.preventDefault();
