@@ -133,6 +133,30 @@ _build:
   </div>
 </div>
 
+<div style="padding:12px 14px;margin:14px 0;border:1px solid #e6e6e6;border-left:6px solid #bbb;border-radius:8px;background:#f7fafc">
+  <p style="margin:0 0 .35rem 0">
+    Alonso Palomino. 2026.
+    <strong>Layer-Aware Native Quantization for Compact Machine Translation: A WMT26 English-to-Chinese Submission.</strong>
+    <em>Proceedings of the Eleventh Conference on Machine Translation</em>.
+    To appear.
+  </p>
+  <div class="publication-links" style="margin-top:.35rem">
+    <span style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#f0f0f0;user-select:none">🔗 TBA</span>
+    <span style="margin:0 .35rem">·</span>
+    <details style="display:inline">
+      <summary style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#e0e6ed;cursor:pointer;user-select:none">📑 Citation</summary>
+      <pre>@inproceedings{palomino-2026-layeraware-native,
+  title     = {Layer-Aware Native Quantization for Compact Machine Translation: A {WMT26} English-to-Chinese Submission},
+  author    = {Palomino, Alonso},
+  booktitle = {Proceedings of the Eleventh Conference on Machine Translation},
+  year      = {2026},
+  note      = {To appear},
+  url       = {TBA}
+}</pre>
+    </details>
+  </div>
+</div>
+
 ## 2025
 
 <div style="padding:12px 14px;margin:14px 0;border:1px solid #e6e6e6;border-left:6px solid #bbb;border-radius:8px;background:#f7fafc">
