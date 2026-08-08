@@ -137,11 +137,14 @@ _build:
   <p style="margin:0 0 .35rem 0">
     Alonso Palomino. 2026.
     <strong>Layer-Aware Native Quantization for Compact Machine Translation: A WMT26 English-to-Chinese Submission.</strong>
-    <em>Proceedings of the Eleventh Conference on Machine Translation</em>.
+    <em>Proceedings of the Eleventh Conference on Machine Translation (WMT26), co-located with EMNLP 2026</em>.
+    Budapest, Hungary, 28-29 October 2026.
     To appear.
   </p>
   <div class="publication-links" style="margin-top:.35rem">
     <span style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#f0f0f0;user-select:none">🔗 TBA</span>
+    <span style="margin:0 .35rem">·</span>
+    <a href="https://www2.statmt.org/wmt26/" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#d0f0d0;text-decoration:none;color:inherit;user-select:none">📚 WMT26</a>
     <span style="margin:0 .35rem">·</span>
     <details style="display:inline">
       <summary style="display:inline-block;padding:.15rem .5rem;border-radius:.35rem;background:#e0e6ed;cursor:pointer;user-select:none">📑 Citation</summary>
@@ -149,7 +152,9 @@ _build:
   title     = {Layer-Aware Native Quantization for Compact Machine Translation: A {WMT26} English-to-Chinese Submission},
   author    = {Palomino, Alonso},
   booktitle = {Proceedings of the Eleventh Conference on Machine Translation},
+  month     = oct,
   year      = {2026},
+  address   = {Budapest, Hungary},
   note      = {To appear},
   url       = {TBA}
 }</pre>
